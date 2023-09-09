@@ -1,0 +1,155 @@
+.page{
+    /* width: 736px; */
+    max-width: 712px;
+    padding: 0 1rem;
+    margin: 6rem auto 9rem auto;
+    
+}
+
+.close{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.5rem;
+    z-index: 999;
+}
+
+.close:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 712px) {
+    .close{
+        padding: 1rem;
+        position: absolute;
+    }
+}
+
+.page-hero{
+    margin-bottom: 3rem;
+}
+
+iframe, img {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+}
+
+@media only screen and (max-width: 1024px){
+    iframe {
+        height: calc(56.25vw - 108px);
+        height: calc(56.25vw - var(--margin-big)*2*9/16);
+        max-height: 414px;
+    }
+}
+
+iframe {
+    height: 414px;
+}
+
+iframe + .context{
+    border-top: none;
+}
+
+.context{
+    margin-bottom: 4rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--linecolor);
+    /* border-top: 1px solid #333; */
+    font-size: 14px;
+    color: var(--darkgrey);
+}
+
+.profile{
+    background-size: cover;
+    background-position: center center;
+    opacity: 1 !important;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;;
+}
+
+.quote{
+    margin: 2rem 0 2rem 0;
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    grid-column-gap: 1.5rem;
+}
+
+.quote .profile{
+    width: 4rem;
+    height: 4rem;
+}
+
+.quote div:nth-child(even){
+    font-style: italic;
+    font-size: 14px;
+    display: block;
+    /* margin-top: 0.2rem; */
+    /* opacity: 0.8; */
+    color: var(--darkgrey);
+}
+
+.details{
+    font-size: 14px;
+    color: var(--darkgrey);
+}
+
+
+
+.head-container{
+    position: relative;
+    /* padding-top: 75%; */
+    display: block;
+    filter: invert(1);
+    user-select: none;
+    width: 100%;
+    height: 400px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.half{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+}
+
+.quarter{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+video{
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: var(--img-radius);
+    /* max-height: 90vh; */
+    border-radius: 2px;
+}
+
+video.portrait{
+    width: 50%;
+}
+
+.image-details{
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: -0.75rem;
+    margin-bottom: 2rem;
+    color: var(--darkgrey);
+}
+
+@media only screen and (max-width: 600px) {
+    video.portrait{
+        width: 100%;
+    }
+    .half{
+        grid-template-columns: 1fr;
+    }
+ 
+
+}

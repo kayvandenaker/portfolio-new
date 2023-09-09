@@ -1,0 +1,155 @@
+.container{
+    padding: 1.5rem;
+    margin: 0 auto;
+    max-width: 2000px;
+}
+
+@media only screen and (max-width: 712px) {
+    .container{
+        padding: 1rem;
+    }
+}
+
+.intro{
+    max-width: 540px;
+    min-height: 374px;
+    margin-bottom: 1.5rem;
+}
+
+.intro a:hover{
+    text-decoration: underline;
+}
+
+.contact-container{
+    cursor: default;
+    width: fit-content;
+    user-select: none;
+}
+
+@media only screen and (min-width: 712px) {
+    .contact{
+        display: none;
+        color: transparent;
+    }
+    .contact.active{
+        display: inline-block;
+    }    
+    .contact a{
+        margin-left: 2ch;
+        color: var(--text);
+        display: block;
+    }
+    .contact-title{
+        cursor:pointer;
+    }
+    .contact-title:hover span{
+        text-decoration: underline;
+    }
+    .contact .spacer{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 712px) {
+    .contact-title{
+        display: none;
+    }
+    .contact a{
+        padding: 0;
+        display: inline-block;
+    }
+    .contact .spacer{
+        margin: 0.5rem;
+        color: var(--grey);
+    }
+}
+
+
+
+.gridItem{
+    margin-bottom: 12px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+} 
+
+.gridItemMedia{
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.gridItemText{
+    padding: 0.5rem 0px 0 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gridItem:hover .gridItemText span:first-of-type{
+    text-decoration: underline;
+}
+
+.gridItemText span:nth-of-type(2){
+    opacity: 0;
+    color: var(--grey);
+}
+
+.gridItem:hover .gridItemText span:nth-of-type(2){
+    opacity: 1;
+}
+
+@media only screen and (min-width: 760px) {
+    .masonry{
+        opacity: 0;
+        transition: all 0.4s ease-out;
+        transform: translateY(50px);
+    }
+    
+    .masonry.loaded{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .gridItem:hover:before{
+        opacity: 1;
+    }
+    
+    .gridItem:before{
+        opacity: 0;
+        content: "";
+        /* background-color: #ebebeb; */
+        background-color: #f2f2f2;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        z-index: -1;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .gridItem .gridItemText span:nth-of-type(2){
+        opacity: 1;
+    }
+    .loading{
+        display: none;
+    }
+}
+
+.head-container{
+    position: relative;
+    padding-top: 60%;
+    display: block;
+    filter: invert(1);
+    user-select: none;
+    width: 360px;
+    width: 100%;
+    /* height: 280px; */
+}
+
+#head-fiber{
+    position: absolute !important;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
