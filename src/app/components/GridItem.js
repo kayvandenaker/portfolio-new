@@ -1,8 +1,11 @@
-import {React, useState} from 'react'
+import {React, useState, useEffect} from 'react'
 
 export default function GridItem({src, title, info, link}){
 
-    const [windowWidth, setWidth] = useState(window.innerWidth);
+    const [windowWidth, setWidth] = useState(() => {
+        const initialState = window.innerWidth;
+        return initialState;
+    });
 
     return (
         <a className={"gridItem"} href={"/" + link}>
