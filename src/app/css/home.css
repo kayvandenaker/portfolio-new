@@ -11,12 +11,29 @@
 }
 
 .intro{
-    max-width: 540px;
-    min-height: 374px;
+    /* max-width: 540px; */
+    max-width: 420px;
+    /* min-height: 374px; */
     margin-bottom: 1.5rem;
+    font-size: 18px;
 }
 
-.intro a:hover{
+.outro{
+    margin-top: 1.5rem;
+    font-size: 18px; 
+    max-width: 520px;
+}
+
+.intro b, .outro b{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.outro p{
+    margin-bottom: 0;
+}
+
+.outro a:hover{
     text-decoration: underline;
 }
 
@@ -26,42 +43,9 @@
     user-select: none;
 }
 
-@media only screen and (min-width: 712px) {
-    .contact{
-        display: none;
-        color: transparent;
-    }
-    .contact.active{
-        display: inline-block;
-    }    
-    .contact a{
-        margin-left: 2ch;
-        color: var(--text);
-        display: block;
-    }
-    .contact-title{
-        cursor:pointer;
-    }
-    .contact-title:hover span{
-        text-decoration: underline;
-    }
-    .contact .spacer{
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 712px) {
-    .contact-title{
-        display: none;
-    }
-    .contact a{
-        padding: 0;
-        display: inline-block;
-    }
-    .contact .spacer{
-        margin: 0.5rem;
-        color: var(--grey);
-    }
+.link{
+    text-decoration: underline;
+    margin-right: 1ch;
 }
 
 

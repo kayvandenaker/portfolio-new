@@ -2,20 +2,27 @@
     /* --bg: #000000;
     --text: white; */
 
-    /* --bg: #f8f8f8; */
+    /* light */
     --bg: white;
     --text: #333333;
     --headers: black;
     --grey: #AAAAAA;
     --darkgrey: #7f7f7f;
     --linecolor: #eee;
+
+    /* dark */
+    /* --bg: #161616;
+    --text: #ededed;
+    --headers: white;
+    --grey: #a0a0a0;
+    --darkgrey: #7f7f7f;
+    --linecolor: #eee; */
   }
   
   * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* font-size: 18px; */
   }
   
   /* main{
@@ -30,6 +37,7 @@
     overflow-x: hidden;
     background-color: var(--bg);
     color: var(--text);
+    font-size: 17px;
   }
   
   a {
