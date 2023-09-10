@@ -14,7 +14,6 @@ export default function GridItem({src, title, info, link}){
     return (
         <a className={"gridItem"} href={"/" + link}>
             <div className="gridItemMedia">
-                {w}
                 {!src.endsWith("mp4") ? 
                     <img src={src}/> :
                     (w > 760 ?
