@@ -33,7 +33,7 @@ export default function Home() {
           I'm a design technologist exploring interactions that fuse digital and physical. 
           </p>
       </div>
-      {columnsCount == 0 ?  <div className='loading'>Media loading...</div> : ""}
+      {/* {columnsCount == 0 ?  <div className='loading'>Media loading...</div> : ""} */}
 
       <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 760: 2, 1140: 3, 1360: 4}}>
         <Masonry gutter={"20px"} ref={masonryRef} className={"masonry " + (columnsCount ? "loaded" : "")}>

@@ -1,20 +1,26 @@
-import {React, useState, useEffect} from 'react'
+import {React, useState, useEffect, useRef} from 'react'
 
 export default function GridItem({src, title, info, link}){
+    const vidRef = useRef(null);
+    const [w, setW] = useState(600);
 
-    const [windowWidth, setWidth] = useState(() => {
-        const initialState = window.innerWidth;
-        return initialState;
-    });
+    useEffect(() => {
+        setW(window.innerWidth);
+        if(src.endsWith("mp4") && window.innerWidth <= 760){
+            vidRef.current.play();
+        };
+      }, [])
 
     return (
         <a className={"gridItem"} href={"/" + link}>
             <div className="gridItemMedia">
+                {w}
                 {!src.endsWith("mp4") ? 
                     <img src={src}/> :
-                    windowWidth > 760 ?
-                        <video onMouseOver={event => event.target.play()} onMouseOut={event => event.target.pause()} width="100%" alt="video" loop playsInline muted src={src} type="video/mp4"/> :
-                        <video width="100%" alt="video" autoPlay loop playsInline muted src={src} type="video/mp4"/>
+                    (w > 760 ?
+                    <video ref={vidRef} onMouseOver={event => event.target.play()} onMouseOut={event => event.target.pause()} width="100%" alt="video" loop playsInline muted src={src} type="video/mp4"/> 
+                    :
+                    <video ref={vidRef} width="100%" alt="video_small" loop playsInline muted src={src} type="video/mp4"/>)
                 }
                 {/* {src.endsWith("mp4") ? <video width="100%" alt="video" muted src={src} type="video/mp4" poster="./media/midi.jpg"/> : <img src={src}/>} */}
 
