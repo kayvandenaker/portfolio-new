@@ -46,6 +46,7 @@
 .link{
     text-decoration: underline;
     margin-right: 1ch;
+    display: inline-block;
 }
 
 

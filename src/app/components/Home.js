@@ -37,7 +37,7 @@ export default function Home() {
 
       <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 760: 2, 1140: 3, 1360: 4}}>
         <Masonry gutter={"20px"} ref={masonryRef} className={"masonry " + (columnsCount ? "loaded" : "")}>
-          <GridItem src={'./media/tiles_small.mp4'} title={'Tiles'} info={'Case Study'} link={'tiles'}/>
+          <GridItem src={'./media/tiles.mp4'} title={'Tiles'} info={'Case Study'} link={'tiles'}/>
           <GridItem src={'./media/arch.mp4'} title={'Arch'} info={'Case Study'} link={'arch'}/>
           <GridItem src={'./media/touchbar.mp4'} title={'IR TouchBar'} info={'MadMapper / ProtoPie'} link={'touchbar'}/>
           <GridItem src={'./media/protopie_laundry.mp4'} title={'ProtoPie'} info={'Freelance Work'} link={'protopie'}/>
@@ -75,13 +75,13 @@ export default function Home() {
           <br/><br/>
           Currently freelancing for <a href='https://www.hapticlabs.io' target="_blank">Hapticlabs</a> and <a href='https://www.protopie.io' target="_blank">ProtoPie</a> while mastering IxD in <a href='https://www.umu.se/en/umea-institute-of-design/' target="_blank">Umeå</a>, formerly at <a href='https://www.above.se' target="_blank">Above</a>, <a href='https://www.arduino.cc' target="_blank">Arduino</a>, <a href='https://www.rolls-roycemotorcars.com/' target="_blank">Rolls-Royce</a> and <a href='https://www.bmw.com' target="_blank">BMW</a>.
           <br/><br/>
-          <div className='contact-container'>
+          <span className='contact-container'>
               <a className='link' href="mailto:kayvandenaker@gmail.com" target="_blank">Email</a>
               <a className="link" href="https://www.instagram.com/aker.industries/" target="_blank">Instagram</a>
               <a className="link" href="https://www.linkedin.com/in/kayvandenaker" target="_blank">LinkedIn</a>
               <a className="link" href="https://twitter.com/kayvandenaker" target="_blank">Twitter</a>
               <a className="link" href='./files/Kay_van_den_Aker.pdf' target="_blank">Resume</a>
-          </div>
+          </span>
         </p>
         </div>
     </div>
