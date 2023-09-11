@@ -1,6 +1,6 @@
 import {React, useState, useEffect, useRef} from 'react'
 
-export default function GridItem({src, title, info, link}){
+export default function GridItem({src, title, info, link, poster}){
     const vidRef = useRef(null);
     const [w, setW] = useState(600);
 
@@ -17,9 +17,9 @@ export default function GridItem({src, title, info, link}){
                 {!src.endsWith("mp4") ? 
                     <img src={src}/> :
                     (w > 760 ?
-                    <video ref={vidRef} onMouseOver={event => event.target.play()} onMouseOut={event => event.target.pause()} width="100%" alt="video" loop playsInline muted src={src} type="video/mp4"/> 
+                    <video ref={vidRef} onMouseOver={event => event.target.play()} onMouseOut={event => event.target.pause()} width="100%" alt="video" loop playsInline muted src={src} type="video/mp4" poster={poster}/> 
                     :
-                    <video ref={vidRef} width="100%" alt="video_small" loop playsInline muted src={src} type="video/mp4"/>)
+                    <video ref={vidRef} width="100%" alt="video_small" loop playsInline muted src={src} type="video/mp4" poster={poster}/>)
                 }
                 {/* {src.endsWith("mp4") ? <video width="100%" alt="video" muted src={src} type="video/mp4" poster="./media/midi.jpg"/> : <img src={src}/>} */}
 

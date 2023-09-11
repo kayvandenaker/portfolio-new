@@ -37,15 +37,15 @@ export default function Home() {
 
       <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 760: 2, 1140: 3, 1360: 4}}>
         <Masonry gutter={"20px"} ref={masonryRef} className={"masonry " + (columnsCount ? "loaded" : "")}>
-          <GridItem src={'./media/tiles.mp4'} title={'Tiles'} info={'Case Study'} link={'tiles'}/>
-          <GridItem src={'./media/arch.mp4'} title={'Arch'} info={'Case Study'} link={'arch'}/>
-          <GridItem src={'./media/touchbar.mp4'} title={'IR TouchBar'} info={'MadMapper / ProtoPie'} link={'touchbar'}/>
-          <GridItem src={'./media/protopie_laundry.mp4'} title={'ProtoPie'} info={'Freelance Work'} link={'protopie'}/>
-          <GridItem src={'./media/hapticlabs_unity.mp4'} title={'Hapticlabs'} info={'Freelance Work'} link={'hapticlabs'}/>
-          <GridItem src={'./media/lines.mp4'} title={'Entering Digital'} info={'Unity / Leap Motion'} link={'lines'}/>
-          <GridItem src={'./media/uwb.mp4'} title={'Radar Presence'} info={'UWB Radar / ProtoPie'} link={'uwb'}/>
-          <GridItem src={'./media/timer_swift.mp4'} title={'Timer Concept'} info={'SwiftUI'} link={'timer'}/>
-          <GridItem src={'./media/bmw.mp4'} title={'BMW Group'} info={'Internship Highlights'} link={'bmw'}/>
+          <GridItem src={'./media/tiles_small.mp4'} poster={'./media/tiles_poster.jpg'} title={'Tiles'} info={'Case Study'} link={'tiles'}/>
+          <GridItem src={'./media/arch_small.mp4'} poster={'./media/arch_poster.jpg'} title={'Arch'} info={'Case Study'} link={'arch'}/>
+          <GridItem src={'./media/touchbar_small.mp4'} poster={'./media/touchbar_poster.jpeg'} title={'IR TouchBar'} info={'MadMapper / ProtoPie'} link={'touchbar'}/>
+          <GridItem src={'./media/protopie_laundry_small.mp4'} poster={'./media/protopie_laundry_poster.jpg'} title={'ProtoPie'} info={'Freelance Work'} link={'protopie'}/>
+          <GridItem src={'./media/hapticlabs_unity_small.mp4'} poster={'./media/hapticlabs_unity_poster.jpeg'} title={'Hapticlabs'} info={'Freelance Work'} link={'hapticlabs'}/>
+          <GridItem src={'./media/lines_small.mp4'} poster={'./media/lines_poster.jpeg'} title={'Entering Digital'} info={'Unity / Leap Motion'} link={'lines'}/>
+          <GridItem src={'./media/uwb_small.mp4'} poster={'./media/uwb_poster.jpeg'} title={'Radar Presence'} info={'UWB Radar / ProtoPie'} link={'uwb'}/>
+          <GridItem src={'./media/timer_swift_small.mp4'} poster={'./media/timer_swift_poster.jpeg'} title={'Timer Concept'} info={'SwiftUI'} link={'timer'}/>
+          <GridItem src={'./media/bmw_small.mp4'} poster={'./media/bmw_poster.jpg'} title={'BMW Group'} info={'Internship Highlights'} link={'bmw'}/>
           <a className={"gridItem"} href={'/head'}>
             <div className="gridItemMedia" ref={headRef} onMouseMove={(e) => {
               setMouseX((e.pageX - headRef.current.getBoundingClientRect().left) / headRef.current.offsetWidth * window.innerWidth); 
@@ -60,11 +60,11 @@ export default function Home() {
             <span>React</span>
             </div>
           </a>
-          <GridItem src={'./media/colors.mp4'} title={'Noise'} info={'Blender'} link={'noise'}/>
-          <GridItem src={'./media/bodystorming.mp4'} title={'Bodystorming'} info={'MadMapper / Figma'} link={'bodystorming'}/>
-          <GridItem src={'./media/kinect.mp4'} title={'Kitchen'} info={'TouchDesigner / Kinect'} link={'kitchen'}/>
-          <GridItem src={'./media/trackpad.mp4'} title={'Trackpad'} info={'Arduino / ProtoPie'} link={'trackpad'}/>
-          <GridItem src={'./media/slider.mp4'} title={'Tactile Slider'} info={'Arduino / Processing'} link={'slider'}/>
+          <GridItem src={'./media/colors_small.mp4'} poster={'./media/colors_poster.jpg'} title={'Noise'} info={'Blender'} link={'noise'}/>
+          <GridItem src={'./media/bodystorming_small.mp4'} poster={'./media/bodystorming_poster.jpg'} title={'Bodystorming'} info={'MadMapper / Figma'} link={'bodystorming'}/>
+          <GridItem src={'./media/kinect_small.mp4'} poster={'./media/kinect_poster.jpg'} title={'Kitchen'} info={'TouchDesigner / Kinect'} link={'kitchen'}/>
+          <GridItem src={'./media/trackpad_small.mp4'} poster={'./media/trackpad_poster.jpg'} title={'Trackpad'} info={'Arduino / ProtoPie'} link={'trackpad'}/>
+          <GridItem src={'./media/slider_small.mp4'} poster={'./media/slider_poster.jpg'} title={'Tactile Slider'} info={'Arduino / Processing'} link={'slider'}/>
           <GridItem src={'./media/midi.jpg'} title={'MIDI Controller'} info={'Arduino'} link={'midi'}/>
         </Masonry>
       </ResponsiveMasonry>
