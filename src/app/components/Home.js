@@ -22,7 +22,7 @@ export default function Home() {
     setColumnsCount(masonryRef.current.props.columnsCount);
   }, [])
 
-
+  // ffmpeg -i input.mp4 -vframes 1 -vf "scale=640:480" output.jpeg
 
   return (
     <main>
