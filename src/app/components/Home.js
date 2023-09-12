@@ -30,7 +30,8 @@ export default function Home() {
       <div className='intro'>
           <p>
           <b>Kay van den Aker</b><br/><br/>
-          I'm a design technologist exploring interactions that fuse digital and physical. 
+          {/* I'm a design technologist exploring interactions that fuse digital and physical.  */}
+          I'm a designer and prototyper, exploring interactions that fuse digital and physical.
           </p>
       </div>
       {/* {columnsCount == 0 ?  <div className='loading'>Media loading...</div> : ""} */}
@@ -71,7 +72,7 @@ export default function Home() {
       <div className='outro'>
       <p>
           <b>About</b><br/><br/>
-          Hey! I'm Kay, a design technologist that thrives in ambiguous environments using a hands-on and iterative approach focused on experience prototyping; putting concepts in the world by gluing together various hard- and software.
+          I'm a designer and prototyper, exploring interactions that fuse digital and physical. I turn ambiguous ideas into experiences by gluing together various hard- and software.
           <br/><br/>
           Currently freelancing for <a href='https://www.hapticlabs.io' target="_blank">Hapticlabs</a> and <a href='https://www.protopie.io' target="_blank">ProtoPie</a> while mastering IxD in <a href='https://www.umu.se/en/umea-institute-of-design/' target="_blank">Umeå</a>, formerly at <a href='https://www.above.se' target="_blank">Above</a>, <a href='https://www.arduino.cc' target="_blank">Arduino</a>, <a href='https://www.rolls-roycemotorcars.com/' target="_blank">Rolls-Royce</a> and <a href='https://www.bmw.com' target="_blank">BMW</a>.
           <br/><br/>
