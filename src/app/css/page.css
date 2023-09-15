@@ -150,6 +150,13 @@ video.portrait{
     .half{
         grid-template-columns: 1fr;
     }
+    .quarter{
+        grid-template-columns: 1fr 1fr;
+    }
+    h1{
+        font-size: 32px;
+        margin-top: 3rem !important;
+    }
  
 
 }
