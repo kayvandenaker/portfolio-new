@@ -16,8 +16,8 @@ export default function Page() {
           <p>
             {/* Arch bridges the remote gap by bringing the patient to the doctor's office through augmented reality, making the remote consultation more intuitive and engaging. Arch also lets the doctor feel the patient's vitals and facilitates collaborative interaction with medical data. */}
             Arch bridges the remote gap by bringing the patient to the doctor's office through augmented reality, making the remote consultation more intuitive and engaging. Arch also lets the doctor feel the patient's vitals through vibration in the central interface.
-            <blockquote>The central interface allows for collaborative interaction with AR and lets the doctor focus more on the patient.</blockquote>
           </p>
+            <blockquote>The central interface allows for collaborative interaction with AR and lets the doctor focus more on the patient.</blockquote>
           
     
          <video src="./media/arch/archinteraction.mp4" type="video/mp4" controls autoPlay={true} muted loop playsInline>Your browser does not support the video tag.</video>

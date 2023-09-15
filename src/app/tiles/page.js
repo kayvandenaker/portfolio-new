@@ -15,8 +15,8 @@ export default function Page() {
         <h3>Solution</h3>
           <p>
             Tiles is an exploration of how a tangible interface in combination with sounds can convey the message of music listening as the sophisticated process it was intended to be.
-            <blockquote>By mechanically moving the top down, music moves from the collection into the player and presents the user with album info and playback controls.</blockquote>
           </p>
+            <blockquote>By mechanically moving the top down, music moves from the collection into the player and presents the user with album info and playback controls.</blockquote>
 
           <video src="./media/tiles/video.mp4" type="video/mp4" controls autoPlay={true} muted loop playsInline>Your browser does not support the video tag.</video>
           <div className='image-details'>Navigating the music collection, queuing a song and increasing volume.</div>
@@ -46,7 +46,10 @@ export default function Page() {
 
           <h3>Experience Prototyping</h3>
 
-          <p>I made a rough mockup of the interactions with the device in ProtoPie. This allowed to quickly explore, communicate and iterate interface ideas.</p>
+          <p>I started with a textured slider exploration as a media controller, navigating the albums in your library.</p>
+          <video src="./media/slider.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
+
+          <p>Then a rough mockup of the interactions with the complete device in ProtoPie. This allowed to quickly explore, communicate and iterate interface ideas.</p>
           <img src="./media/tiles/protopie.png"/>
 
           <p>I created a physical experience prototype to try out the tangible interface in combination with the sounds and the graphical user interface. </p>

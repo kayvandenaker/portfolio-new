@@ -44,7 +44,7 @@ export default function Home() {
           <GridItem src={'./media/protopie_laundry_small.mp4'} poster={'./media/protopie_laundry_poster.jpg'} title={'ProtoPie'} info={'Freelance Work'} link={'protopie'}/>
           <GridItem src={'./media/hapticlabs_unity_small.mp4'} poster={'./media/hapticlabs_unity_poster.jpeg'} title={'Hapticlabs'} info={'Freelance Work'} link={'hapticlabs'}/>
           <GridItem src={'./media/lines_small.mp4'} poster={'./media/lines_poster.jpeg'} title={'Entering Digital'} info={'Unity / Leap Motion'} link={'lines'}/>
-          <GridItem src={'./media/uwb_small.mp4'} poster={'./media/uwb_poster.jpeg'} title={'Radar Presence'} info={'UWB Radar / ProtoPie'} link={'uwb'}/>
+          <GridItem src={'./media/uwb_small.mp4'} poster={'./media/uwb_poster.jpeg'} title={'Radar Presence'} info={'UWB / ProtoPie'} link={'uwb'}/>
           <GridItem src={'./media/timer_swift_small.mp4'} poster={'./media/timer_swift_poster.jpeg'} title={'Timer Concept'} info={'SwiftUI'} link={'timer'}/>
           <GridItem src={'./media/bmw_small.mp4'} poster={'./media/bmw_poster.jpg'} title={'BMW Group'} info={'Internship Highlights'} link={'bmw'}/>
           <a className={"gridItem"} href={'/head'}>
@@ -61,18 +61,18 @@ export default function Home() {
             <span>React</span>
             </div>
           </a>
-          <GridItem src={'./media/colors_small.mp4'} poster={'./media/colors_poster.jpg'} title={'Noise'} info={'Blender'} link={'noise'}/>
           <GridItem src={'./media/bodystorming_small.mp4'} poster={'./media/bodystorming_poster.jpg'} title={'Bodystorming'} info={'MadMapper / Figma'} link={'bodystorming'}/>
+          <GridItem src={'./media/colors_small.mp4'} poster={'./media/colors_poster.jpg'} title={'Noise'} info={'Blender'} link={'noise'}/>
           <GridItem src={'./media/kinect_small.mp4'} poster={'./media/kinect_poster.jpg'} title={'Kitchen'} info={'TouchDesigner / Kinect'} link={'kitchen'}/>
-          <GridItem src={'./media/trackpad_small.mp4'} poster={'./media/trackpad_poster.jpg'} title={'Trackpad'} info={'Arduino / ProtoPie'} link={'trackpad'}/>
-          <GridItem src={'./media/slider_small.mp4'} poster={'./media/slider_poster.jpg'} title={'Tactile Slider'} info={'Arduino / Processing'} link={'slider'}/>
           <GridItem src={'./media/midi.jpg'} title={'MIDI Controller'} info={'Arduino'} link={'midi'}/>
+          <GridItem src={'./media/trackpad_small.mp4'} poster={'./media/trackpad_poster.jpg'} title={'Trackpad'} info={'Arduino / ProtoPie'} link={'trackpad'}/>
+          {/* <GridItem src={'./media/slider_small.mp4'} poster={'./media/slider_poster.jpg'} title={'Tactile Slider'} info={'Arduino / Processing'} link={'slider'}/> */}
         </Masonry>
       </ResponsiveMasonry>
       <div className='outro'>
       <p>
           <b>About</b><br/><br/>
-          I'm a designer and prototyper, exploring interactions that fuse digital and physical. I turn ambiguous ideas into experiences by gluing together various hard- and software.
+          I'm a designer and prototyper, exploring interactions that fuse digital and physical. Turning ambiguous ideas into experiences by gluing together various hard- and software.
           <br/><br/>
           Currently freelancing for <a href='https://www.hapticlabs.io' target="_blank">Hapticlabs</a> and <a href='https://www.protopie.io' target="_blank">ProtoPie</a> while mastering IxD in <a href='https://www.umu.se/en/umea-institute-of-design/' target="_blank">Umeå</a>, formerly at <a href='https://www.above.se' target="_blank">Above</a>, <a href='https://www.arduino.cc' target="_blank">Arduino</a>, <a href='https://www.rolls-roycemotorcars.com/' target="_blank">Rolls-Royce</a> and <a href='https://www.bmw.com' target="_blank">BMW</a>.
           <br/><br/>

@@ -2,7 +2,7 @@ import './globals.css'
 import { Inter, Space_Grotesk } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
-const space_grotesk = Inter({ subsets: ['latin'] })
+const space_grotesk = Space_Grotesk({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Kay van den Aker',
