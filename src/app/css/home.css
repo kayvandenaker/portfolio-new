@@ -86,13 +86,13 @@
 @media only screen and (min-width: 1140px) {
     .masonry{
         opacity: 0;
-        transition: all 0.4s ease-out;
-        transform: translateY(50px);
+        /* transition: all 0.4s ease-out; */
+        /* transform: translateY(16px); */
     }
     
     .masonry.loaded{
         opacity: 1;
-        transform: translateY(0);
+        /* transform: translateY(0); */
     }
     .gridItem:hover:before{
         opacity: 1;

@@ -1,7 +1,8 @@
 import {React} from 'react'
+import Link from 'next/link'
 
 export default function Close(){
     return (
-        <a className='close' href='/'>← Home</a>
+        <Link className='close' href='/'>← Home</Link>
     )
 }

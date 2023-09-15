@@ -4,6 +4,7 @@ import '../css/main.css'
 import '../css/home.css'
 
 import { React, useState, useRef, useEffect } from "react";
+import Link from 'next/link'
 
 import Head from '../components/Head.js';
 import GridItem from '../components/GridItem.js';
@@ -11,6 +12,7 @@ import GridItem from '../components/GridItem.js';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
 export default function Home() {
+
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
 
@@ -47,7 +49,7 @@ export default function Home() {
           <GridItem src={'./media/uwb_small.mp4'} poster={'./media/uwb_poster.jpeg'} title={'Radar Presence'} info={'UWB / ProtoPie'} link={'uwb'}/>
           <GridItem src={'./media/timer_swift_small.mp4'} poster={'./media/timer_swift_poster.jpeg'} title={'Timer Concept'} info={'SwiftUI'} link={'timer'}/>
           <GridItem src={'./media/bmw_small.mp4'} poster={'./media/bmw_poster.jpg'} title={'BMW Group'} info={'Internship Highlights'} link={'bmw'}/>
-          <a className={"gridItem"} href={'/head'}>
+          <Link className={"gridItem"} href={'/head'}>
             <div className="gridItemMedia" ref={headRef} onMouseMove={(e) => {
               setMouseX((e.pageX - headRef.current.getBoundingClientRect().left) / headRef.current.offsetWidth * window.innerWidth); 
               setMouseY((e.clientY - headRef.current.getBoundingClientRect().top) / headRef.current.offsetHeight * window.innerHeight); 
@@ -60,7 +62,7 @@ export default function Home() {
             <span>Head</span>
             <span>React</span>
             </div>
-          </a>
+          </Link>
           <GridItem src={'./media/bodystorming_small.mp4'} poster={'./media/bodystorming_poster.jpg'} title={'Bodystorming'} info={'MadMapper / Figma'} link={'bodystorming'}/>
           <GridItem src={'./media/colors_small.mp4'} poster={'./media/colors_poster.jpg'} title={'Noise'} info={'Blender'} link={'noise'}/>
           <GridItem src={'./media/kinect_small.mp4'} poster={'./media/kinect_poster.jpg'} title={'Kitchen'} info={'TouchDesigner / Kinect'} link={'kitchen'}/>

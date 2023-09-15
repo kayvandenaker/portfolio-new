@@ -1,5 +1,6 @@
 import { React, useEffect, useRef } from 'react'
 import { useMediaQuery } from 'react-responsive'
+import Link from 'next/link'
 
 export default function GridItem({src, title, info, link, poster}){
 
@@ -15,7 +16,7 @@ export default function GridItem({src, title, info, link, poster}){
     }, [isTabletOrMobile]);
 
     return (
-        <a className={"gridItem"} href={"/" + link}>
+        <Link className={"gridItem"} href={"/" + link}>
             <div className="gridItemMedia">
                 {!src.endsWith("mp4") ? 
                     <img src={src}/> :
@@ -33,6 +34,6 @@ export default function GridItem({src, title, info, link, poster}){
                 <span>{title}</span>
                 <span>{info}</span>
             </div>
-        </a>
+        </Link>
     )
 }
