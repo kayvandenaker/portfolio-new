@@ -39,7 +39,7 @@ export default function Home() {
       {/* {columnsCount == 0 ?  <div className='loading'>Media loading...</div> : ""} */}
 
       <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 760: 2, 1140: 3, 1360: 4}}>
-        <Masonry gutter={"20px"} ref={masonryRef} className={"masonry " + (columnsCount ? "loaded" : "")}>
+        <Masonry gutter={"10px 20px"} ref={masonryRef} className={"masonry " + (columnsCount ? "loaded" : "")}>
           <GridItem src={'./media/tiles_small.mp4'} poster={'./media/tiles_poster.jpg'} title={'Tiles'} info={'Case Study'} link={'tiles'}/>
           <GridItem src={'./media/arch_small.mp4'} poster={'./media/arch_poster.jpg'} title={'Arch'} info={'Case Study'} link={'arch'}/>
           <GridItem src={'./media/touchbar_small.mp4'} poster={'./media/touchbar_poster.jpeg'} title={'IR TouchBar'} info={'MadMapper / ProtoPie'} link={'touchbar'}/>
