@@ -9,10 +9,9 @@ import Link from 'next/link'
 import Head from '../components/Head.js';
 import GridItem from '../components/GridItem.js';
 
-import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
+import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
 
 export default function Home() {
-
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
 
@@ -27,7 +26,6 @@ export default function Home() {
   // ffmpeg -i input.mp4 -vframes 1 -vf "scale=640:480" output.jpeg
 
   return (
-    <main>
     <div className='container'>
       <div className='intro'>
           <p>
@@ -88,6 +86,5 @@ export default function Home() {
         </p>
         </div>
     </div>
-    </main>
   )
 }
