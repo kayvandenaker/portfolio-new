@@ -10,17 +10,30 @@ export default function Page() {
         <Close />
         <div className='page-hero'>
           <h1>Pixel Art Generator</h1>
-          <p>Asking the ChatGPT API to draw an image in an 8x8 grid, outputting it on an LED matrix.</p>
+          <p>Asking the ChatGPT API to draw an image in an 8x8 grid, outputting it on an LED matrix. Experiment together with <a href="https://lukasmoro.com" target="_blank">Lukas Moro</a></p>
         </div>
-        {/* <video src="./media/bodystorming.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video> */}
-        <img src="./media/heart_screenshot.png"/>
-        "Heart" <br/><br/>
-        <img src="./media/heart.jpg"/>
+        <img src="./media/gpt_screenshot.png"/>
+        {/* "Heart" <br/><br/> */}
+        {/* <img src="./media/gpt_heart.jpg"/> */}
         <br/>
-        "Letter" <br/><br/>
-        <img src="./media/letter_a.jpg"/>
-
-        {/* <video src="./media/bodystorming2.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video> */}
+        <div className='half'>
+          <div>
+            "Heart"<br/><br/>
+            <img src="./media/gpt_heart_square.jpg"/>
+          </div>
+          <div>
+            "Letter A"<br/><br/>
+            <img src="./media/gpt_letter_a.jpg"/>
+          </div>
+          <div>
+            "Smiley"<br/><br/>
+            <img src="./media/gpt_smiley.jpg"/>
+          </div>
+          <div>
+            "Space Invader"<br/><br/>
+            <img src="./media/gpt_invader.jpg"/>
+          </div>
+        </div>
           
 
       </div>
