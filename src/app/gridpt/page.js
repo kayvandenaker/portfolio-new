@@ -10,7 +10,8 @@ export default function Page() {
         <Close />
         <div className='page-hero'>
           <h1>Pixel Art Generator</h1>
-          <p>Asking the ChatGPT API to draw an image in an 8x8 grid, outputting it on an LED matrix. Experiment together with <a href="https://lukasmoro.com" target="_blank">Lukas Moro</a></p>
+          <p>Asking the ChatGPT API to draw an image in an 8x8 grid, outputting it on an LED matrix through Serial.
+            Built with React and Arduino, in collaboration with <a href="https://lukasmoro.com" target="_blank">Lukas Moro</a>.</p>
         </div>
         <img src="./media/gpt_screenshot.png"/>
         {/* "Heart" <br/><br/> */}
