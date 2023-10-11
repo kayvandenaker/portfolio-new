@@ -46,6 +46,7 @@ export default function Home() {
           <GridItem src={'./media/lines_small.mp4'} poster={'./media/lines_poster.jpeg'} title={'Entering Digital'} info={'Unity / Leap Motion'} link={'lines'}/>
           <GridItem src={'./media/uwb_small.mp4'} poster={'./media/uwb_poster.jpeg'} title={'Radar Presence'} info={'UWB / ProtoPie'} link={'uwb'}/>
           <GridItem src={'./media/timer_swift_small.mp4'} poster={'./media/timer_swift_poster.jpeg'} title={'Timer Concept'} info={'SwiftUI'} link={'timer'}/>
+          <GridItem src={'./media/heart.jpg'} title={'Pixel Art Generator'} info={'ChatGPT API / Arduino'} link={'gridpt'}/>
           <GridItem src={'./media/bmw_small.mp4'} poster={'./media/bmw_poster.jpg'} title={'BMW Group'} info={'Internship Highlights'} link={'bmw'}/>
           <Link className={"gridItem"} href={'/head'}>
             <div className="gridItemMedia" ref={headRef} onMouseMove={(e) => {
