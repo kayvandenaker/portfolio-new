@@ -3,6 +3,7 @@ import '../css/main.css'
 import '../css/page.css'
 
 import Close from '../components/Close.js'
+import Nav from '../components/Nav.js'
 
 export default function Page() {
     return (
@@ -14,7 +15,7 @@ export default function Page() {
         </div>
         <video className='portrait' src="./media/touchbar.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
         <img src="./media/touchbar2.jpeg"/>
-          
+        <Nav />
 
       </div>
     )

@@ -3,6 +3,7 @@ import '../css/main.css'
 import '../css/page.css'
 
 import Close from '../components/Close.js'
+import Nav from '../components/Nav.js'
 
 export default function Page() {
     return (
@@ -18,7 +19,7 @@ export default function Page() {
         <h3>Demo: Voice Interactions and Connect</h3>
         <p>Showcasing voice interactions across devices through a Google-style remote laundry controller. <u><a href='https://www.protopie.io/blog/voice-and-cross-device-prototyping' target='blank'>Read tutorial</a></u></p>
         <video src="./media/protopie_laundry.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
-
+        <Nav />
       </div>
     )
 }

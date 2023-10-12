@@ -3,6 +3,7 @@ import '../css/main.css'
 import '../css/page.css'
 
 import Close from '../components/Close.js'
+import Nav from '../components/Nav.js'
 
 export default function Page() {
     return (
@@ -110,7 +111,7 @@ export default function Page() {
             <img src="./media/arch/tactile.jpg"/>
             <img src="./media/arch/setup.jpg"/>
           </div>
-
+          <Nav />
       </div>
     )
 }

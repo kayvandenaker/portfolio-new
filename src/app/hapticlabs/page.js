@@ -3,6 +3,7 @@ import '../css/main.css'
 import '../css/page.css'
 
 import Close from '../components/Close.js'
+import Nav from '../components/Nav.js'
 
 export default function Page() {
     return (
@@ -26,7 +27,7 @@ export default function Page() {
         <video src="./media/hapticlabs_protopie.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
         
 
-
+        <Nav />
       </div>
     )
 }

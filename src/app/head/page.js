@@ -7,6 +7,7 @@ import '../css/page.css'
 import { useState } from "react";
 
 import Close from '../components/Close.js'
+import Nav from '../components/Nav.js'
 
 import Head from '../components/Head.js';
 
@@ -20,12 +21,13 @@ export default function Page() {
       <div className="page">
         <Close />
         <div className='page-hero'>
-          <h1>Head</h1>
+          <h1>3D Head</h1>
           <p>Mouse tracking head made with React Three Fiber and post processing. 3D created with a Lidar scanner, cleaned with MeshMixer and Blender.</p>
         </div>
         <div className='head-container'>
           <Head mouseX={mouseX} mouseY={mouseY}/>
         </div>
+        <Nav />
       </div>
     </main>
     )

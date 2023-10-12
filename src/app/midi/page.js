@@ -3,6 +3,7 @@ import '../css/main.css'
 import '../css/page.css'
 
 import Close from '../components/Close.js'
+import Nav from '../components/Nav.js'
 
 export default function Page() {
     return (
@@ -13,6 +14,7 @@ export default function Page() {
           <p>Arduino project from back in 2015, a MIDI Controller for FL Studio. Illuminated arcade buttons, potentionmeters and 5 segment LED filter level indicators.</p>
         </div>
         <img src="./media/midi.jpg"/>
+        <Nav />
       </div>
     )
 }

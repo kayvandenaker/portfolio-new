@@ -3,6 +3,7 @@ import '../css/main.css'
 import '../css/page.css'
 
 import Close from '../components/Close.js'
+import Nav from '../components/Nav.js'
 
 export default function Page() {
     return (
@@ -36,7 +37,7 @@ export default function Page() {
           </div>
         </div>
           
-
+        <Nav />
       </div>
     )
 }

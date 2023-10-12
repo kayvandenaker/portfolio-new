@@ -3,6 +3,7 @@ import '../css/main.css'
 import '../css/page.css'
 
 import Close from '../components/Close.js'
+import Nav from '../components/Nav.js'
 
 export default function Page() {
     return (
@@ -62,7 +63,7 @@ export default function Page() {
           <img src="./media/bmw/hover.jpg"/>
           <span className='details'>image source: www.cnet.com/tech/mobile/touchless-touch-screen-gives-you-control-without-contact-video/</span>
 
-
+          <Nav />
       </div>
     )
 }
