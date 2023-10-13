@@ -30,7 +30,6 @@
 .nav-footer{
     position: fixed;
     bottom: 1.5rem;
-    /* left: 1rem; */
     right: 1.5rem;
 }
 
@@ -44,6 +43,9 @@
 }
 
 @media only screen and (max-width: 712px) {
+    .page{
+        padding: 6rem 1rem 1rem 1rem;
+    }
     .close{
         padding: 1rem;
         position: absolute;

@@ -31,7 +31,7 @@ export default function Home() {
           <p>
           <b>Kay van den Aker</b><br/><br/>
           {/* I'm a design technologist exploring interactions that fuse digital and physical.  */}
-          I'm a designer and prototyper, exploring interactions that fuse digital and physical.
+          Designer and prototyper, exploring interactions that fuse digital and physical.
           </p>
       </div>
       {/* {columnsCount == 0 ?  <div className='loading'>Media loading...</div> : ""} */}
