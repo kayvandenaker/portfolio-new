@@ -167,7 +167,7 @@ video:not(.gridItemMedia video){
     display: block;
     margin-bottom: 1rem;
     border-radius: var(--img-radius);
-    /* max-height: 90vh; */
+    max-height: 90vh;
     border-radius: 2px;
 }
 

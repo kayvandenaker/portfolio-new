@@ -14,6 +14,7 @@ export default function Page() {
           <p>Prompting the ChatGPT API to draw an image in an 8x8 grid, outputting it on an LED matrix through Serial.
             Built with React and Arduino, in collaboration with <a href="https://lukasmoro.com" target="_blank">Lukas Moro</a>.</p>
         </div>
+        <video src="./media/gpt_smile.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
         <img src="./media/gpt_screenshot.png"/>
         {/* "Heart" <br/><br/> */}
         {/* <img src="./media/gpt_heart.jpg"/> */}
