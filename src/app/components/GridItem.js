@@ -10,7 +10,8 @@ export default function GridItem({src, title, info, link, poster}){
     return (
         <Link className={"gridItem"} href={"/" + link} key={"/" +  link}>
             { title == "3D Head" ?
-                <HeadSmall/> :
+                (isTabletOrMobile ? <div className="gridItemMedia"><img src={poster}/></div> : <HeadSmall/> )
+                :
                 <div className="gridItemMedia">
                     {src.endsWith("mp4") && !isTabletOrMobile ?
                         <video width="100%" loop playsInline muted src={src} type="video/mp4" poster={poster} onMouseOver={event => event.target.play()} onMouseOut={event => event.target.pause()} />:

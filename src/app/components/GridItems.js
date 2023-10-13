@@ -72,6 +72,7 @@ export default {
     {
       title: '3D Head',
       info: 'React',
+      poster: './media/head.png',
       link: 'head'
     },
     {
