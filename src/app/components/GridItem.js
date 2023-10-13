@@ -1,14 +1,14 @@
 import { React } from 'react'
-import { useMediaQuery } from 'react-responsive'
+import useBetterMediaQuery from '../components/useBetterMediaQuery.js';
 import Link from 'next/link'
 import HeadSmall from '../components/HeadSmall.js';
 
 export default function GridItem({src, title, info, link, poster}){
 
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1140px)' }) ;
+    const isTabletOrMobile = useBetterMediaQuery('(max-width: 1140px)');
 
     return (
-        <Link className={"gridItem"} href={"/" + link}>
+        <Link className={"gridItem"} href={"/" + link} key={"/" +  link}>
             { title == "3D Head" ?
                 <HeadSmall/> :
                 <div className="gridItemMedia">

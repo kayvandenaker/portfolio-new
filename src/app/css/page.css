@@ -43,25 +43,9 @@
 }
 
 @media only screen and (max-width: 712px) {
-    .page{
-        padding: 6rem 1rem 1rem 1rem;
-    }
     .close{
         padding: 1rem;
         position: absolute;
-    }
-    .nav-footer{
-        margin-top: 6rem;
-        position:inherit;
-    }
-    .nav-footer-spacer{
-        display: none;
-    }
-    .nav-footer .mobile{
-        display: flex;
-    }
-    .nav-footer .desktop{
-        display: none;
     }
 }
 
@@ -81,6 +65,22 @@ iframe, img {
         height: calc(56.25vw - 108px);
         height: calc(56.25vw - var(--margin-big)*2*9/16);
         max-height: 414px;
+    }
+    .page{
+        padding: 6rem 1rem 1rem 1rem;
+    }
+    .nav-footer{
+        margin-top: 6rem;
+        position:inherit;
+    }
+    .nav-footer-spacer{
+        display: none;
+    }
+    .nav-footer .mobile{
+        display: flex;
+    }
+    .nav-footer .desktop{
+        display: none;
     }
 }
 
