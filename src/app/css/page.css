@@ -163,16 +163,13 @@ iframe + .context{
 }
 
 video:not(.gridItemMedia video){
-    width: 100%;
+    max-width: 100%;
+    width: auto;
     display: block;
-    margin-bottom: 1rem;
     border-radius: var(--img-radius);
     max-height: 90vh;
     border-radius: 2px;
-}
-
-video.portrait{
-    width: 50%;
+    margin: 0 auto 1rem auto;
 }
 
 .image-details{
@@ -184,9 +181,6 @@ video.portrait{
 }
 
 @media only screen and (max-width: 600px) {
-    video.portrait{
-        width: 100%;
-    }
     .half{
         grid-template-columns: 1fr;
     }
