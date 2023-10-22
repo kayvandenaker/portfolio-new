@@ -3,46 +3,60 @@
 import '../css/main.css'
 import '../css/home.css'
 
-import { React, useState, useRef, useEffect } from "react";
-import Link from 'next/link'
+import { React, useState, useEffect } from "react";
 
 import GridItem from '../components/GridItem.js';
 import GridItems from '../components/GridItems.js';
 
-import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
+import useBetterMediaQuery from '../components/useBetterMediaQuery.js';
 
 
 
 export default function Home() {
-  const masonryRef = useRef(null);
-  const [columnsCount, setColumnsCount] = useState(0);
+  
+  const isMobile = useBetterMediaQuery('(max-width: 760px)');
+  const isTablet = useBetterMediaQuery('(min-width: 761px) and (max-width: 1140px)');
+  const isLaptop = useBetterMediaQuery('(min-width: 1141px) and (max-width: 1360px)');
+  const isDesktop = useBetterMediaQuery('(min-width: 1361px)');
+  
+  const [masonryContent, setMasonryContent] = useState([]);
+  const [columnCount, setColumnCount] = useState(0);
 
+  
+  useEffect(() => {setColumnCount(isMobile ? 1 : isTablet ? 2 : isLaptop ? 3 : isDesktop ? 4 : 0)}, [isMobile, isTablet, isLaptop, isDesktop])
+  
   useEffect(() => {
-    setColumnsCount(masonryRef.current.props.columnsCount);
-
-    sessionStorage.setItem('oldPage', 'home');
-  }, [])
-
-  // ffmpeg -i input.mp4 -vframes 1 -vf "scale=640:480" output.jpeg
+    if(columnCount !== 0){
+      const content = [];
+      for (let i = 0; i < columnCount; i++) {
+        const column = [];
+        GridItems.gridItems.forEach((item, j) => {
+          // move the second last object if columns = 3 to column 0
+          if(j !== GridItems.gridItems.length - 2 || columnCount !== 3){
+            if(j % columnCount == i){ column.push(<GridItem key={item.link} src={item.src} poster={item.poster} title={item.title} info={item.info} link={item.link}/>) };
+          } else if (i == 0){
+            column.push(<GridItem key={item.link} src={item.src} poster={item.poster} title={item.title} info={item.info} link={item.link}/>)
+          }
+        })
+        content.push(<div key={"c" + i} className='masonry-column'>{column}</div>);
+      }
+      setMasonryContent(content);
+    }
+  }, [columnCount]);
+  
+  useEffect(() => { sessionStorage.setItem('oldPage', 'home') }, [])
 
   return (
     <div className='container'>
       <div className='intro'>
           <p>
           <b>Kay van den Aker</b><br/><br/>
-          {/* I'm a design technologist exploring interactions that fuse digital and physical.  */}
           Designer and prototyper, exploring interactions that fuse digital and physical.
           </p>
       </div>
-      {/* {columnsCount == 0 ?  <div className='loading'>Media loading...</div> : ""} */}
 
-      <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 760: 2, 1140: 3, 1360: 4}}>
-        <Masonry gutter={"10px 20px"} ref={masonryRef} className={"masonry " + (columnsCount ? "loaded" : "")}>
-          {GridItems.gridItems.map((item, i) => { return(
-              <GridItem key={item.link} src={item.src} poster={item.poster} title={item.title} info={item.info} link={item.link}/>
-          )})}
-        </Masonry>
-      </ResponsiveMasonry>
+      <div className={'masonry ' + (columnCount ? "loaded" : "")}>{masonryContent}</div>
+
       <div className='outro'>
       <p>
           <b>About</b><br/><br/>

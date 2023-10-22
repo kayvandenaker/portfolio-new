@@ -1,3 +1,5 @@
+// ffmpeg -i input.mp4 -vframes 1 -vf "scale=640:480" output.jpeg
+
 export default {
     gridItems : [
     {
@@ -58,7 +60,7 @@ export default {
     },
     {
       title: 'Pixel Art Generator',
-      info: 'ChatGPT API / Arduino',
+      info: 'ChatGPT API',
       src: './media/gpt_heart.jpg',
       link: 'gridpt'
     },
