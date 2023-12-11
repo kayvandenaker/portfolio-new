@@ -6,10 +6,7 @@ const space_grotesk = Space_Grotesk({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Kay van den Aker',
-  description: 'Designer and prototyper, exploring interactions that fuse digital and physical. Turning ambiguous ideas into experiences by gluing together various hard- and software.',
-  openGraph: {
-    images: './media/head.png',
-  },
+  description: 'Designer and prototyper, exploring interactions that fuse digital and physical. Turning ambiguous ideas into experiences by gluing together various hard- and software.'
 }
 
 export default function RootLayout({ children }) {
