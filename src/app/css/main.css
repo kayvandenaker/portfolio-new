@@ -18,7 +18,7 @@
 
   /* dark */
 }
-
+/*
 @media (prefers-color-scheme: dark) {
   *{
     font-weight: 300;
@@ -33,7 +33,7 @@
     --hovercolor: #181818;
   }
 }
-
+*/
 
 * {
   box-sizing: border-box;
