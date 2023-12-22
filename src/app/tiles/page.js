@@ -12,17 +12,17 @@ export default function Page() {
         <img src="./media/tiles/tiles.jpeg" className='page-hero'/>
         <h1>Tiles — Connecting with your music collection.</h1>
         <h3>Problem</h3>
-        <p>Modern music listening experiences often lack suspense. The black box present in modern technologies such as mobile phones abstract away what's going on behind the interface and don't require any process to interact with; any song in the world is just one click away, no sonic feedback, no haptic feedback and flat visual feedback.</p>
+        <p>Modern music listening experiences often lack suspense. The black box present in modern technologies such as mobile phones abstract away what's going on behind the interface and don't require any process to interact with. Any song in the world is just one click away, no sonic feedback, no haptic feedback and flat visual feedback.</p>
         <h3>Solution</h3>
           <p>
-            Tiles is an exploration of how a tangible interface in combination with sounds can convey the message of music listening as the sophisticated process it was intended to be.
+            Tiles is an exploration of how a tangible interface could present music listening as the sophisticated process it was intended to be.
           </p>
             <blockquote>By mechanically moving the top down, music moves from the collection into the player and presents the user with album info and playback controls.</blockquote>
 
           <video src="./media/tiles/video.mp4" type="video/mp4" controls autoPlay={true} muted loop playsInline>Your browser does not support the video tag.</video>
           <div className='image-details'>Navigating the music collection, queuing a song and increasing volume.</div>
 
-          <p> Our approach is a device which puts emphasis on the albums, their artworks and information. In contrast to music streaming apps, Tiles provokes a careful selection of music and elegant interactions to enjoy your favorite tunes.</p>
+          <p> Our approach is a device which puts emphasis on the albums, their artworks and information. In contrast to music streaming apps, Tiles provokes a careful selection of music and elegant interactions to enjoy your favorite songs.</p>
           
           <div className='context quarter'>
             <div>
@@ -47,16 +47,16 @@ export default function Page() {
 
           <h3>Experience Prototyping</h3>
 
-          <p>I started with a textured slider exploration as a media controller, navigating the albums in your library.</p>
+          <p>Initially, I explored a tangible slider as a media controller, navigating through albums.</p>
           <video src="./media/slider.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
 
-          <p>Then a rough mockup of the interactions with the complete device in ProtoPie. This allowed to quickly explore, communicate and iterate interface ideas.</p>
+          <p>Then a rough mockup of the interactions with the device was made in ProtoPie. This allowed to quickly explore, experience and iterate interface ideas.</p>
           <img src="./media/tiles/protopie.png"/>
 
           <p>I created a physical experience prototype to try out the tangible interface in combination with the sounds and the graphical user interface. </p>
           <img src="./media/tiles/prototype.jpeg"/>
 
-          <p>A projector was used to show what the screens would display. The capacitive touch sensor, rotary encoder and potentiometer communicate with ProtoPie through an Arduino emulating keystrokes.</p>
+          <p>A projector was used to show what the screens would display. The electronics communicate with ProtoPie through an Arduino.</p>
           <div className='half'>
             <video src="./media/tiles/slider.mp4" type="video/mp4" autoPlay={true} muted loop playsInline controls>Your browser does not support the video tag.</video>
             <video src="./media/tiles/cue.mp4" type="video/mp4" autoPlay={true} muted loop playsInline controls>Your browser does not support the video tag.</video>
@@ -64,7 +64,7 @@ export default function Page() {
           <div className='image-details'>Turn up the volume to hear the audio.</div>
 
           <h3>Model Making</h3>
-          <p>This project was a collaboration with the Product Design MFA, so the model you see bellow is mostly their work. I helped with the mechanical parts of the mockup and the video editting.</p>
+          <p>This project was a collaboration with the Product Design MFA, the mockup bellow is mostly their work. I helped shaping the mechanical parts and did the video editting.</p>
           <img src="./media/tiles/process.jpeg"/>
           <img src="./media/tiles/render2.jpeg"/>
           <img src="./media/tiles/back.jpg"/>

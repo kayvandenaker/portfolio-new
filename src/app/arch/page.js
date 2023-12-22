@@ -10,19 +10,21 @@ export default function Page() {
       <div className="page">
         <Close />
         <img src="./media/arch/arch.png" className='page-hero'/>
-        <h1>Arch — Connecting remote doctors to their patients through an AR enviroment.</h1>
+        <h1>Arch — Connecting remote doctors to their patients through AR.</h1>
           <h3>Problem</h3>
           <p>Remote healthcare consulting is a big challenge, the screen of a video call limits the richness of the real world and compromises the healthcare experience for both doctor and patient. </p>
           <h3>Solution</h3>
           <p>
             {/* Arch bridges the remote gap by bringing the patient to the doctor's office through augmented reality, making the remote consultation more intuitive and engaging. Arch also lets the doctor feel the patient's vitals and facilitates collaborative interaction with medical data. */}
-            Arch bridges the remote gap by bringing the patient to the doctor's office through augmented reality, making the remote consultation more intuitive and engaging. Arch also lets the doctor feel the patient's vitals through vibration in the central interface.
+            Arch bridges the remote gap by bringing the patient to the doctor's office through augmented reality, making the remote consultation more intuitive and engaging. Arch also lets the doctor feel the patient's vitals through haptics on the device.
           </p>
-            <blockquote>The central interface allows for collaborative interaction with AR and lets the doctor focus more on the patient.</blockquote>
+            {/* <blockquote>The central interface allows for a collaborative interaction with healthcare data, and each other, allowing the doctor to focus more on the patient.</blockquote> */}
+            {/* <blockquote>Arch allows for a simultaneous interaction with healthcare data and the other person, allowing the doctor to stay focused on the conversation.</blockquote> */}
+            <blockquote>The central and collaborative interface of Arch allows both doctor and patient to stay focused on each other.</blockquote>
           
     
          <video src="./media/arch/archinteraction.mp4" type="video/mp4" controls autoPlay={true} muted loop playsInline>Your browser does not support the video tag.</video>
-          <div className='image-details'>Collaboratively interacting with medical data over distance. (doctor left, patient as hologram right)</div>
+          <div className='image-details'>Remotely interacting with medical data together. (doctor left, patient as hologram right)</div>
           <div className='half'>
             <div>
               <video src="./media/arch/archtangibility.mp4" type="video/mp4" controls autoPlay={true} muted loop playsInline>Your browser does not support the video tag.</video>
@@ -33,7 +35,7 @@ export default function Page() {
               <div className='image-details'>Joining the consultation.</div>
             </div>
           </div>
-          <p> Our approach is a full body scan of the people, and projecting those in augmented reality at their opponent. This creates an immersive experience of togetherness and allows both doctor and patient to express themselves using their full body.</p>
+          <p> Our approach is a body scan of both people, and projecting those in augmented reality at the opponent. This creates an immersive experience of togetherness, and allows both doctor and patient to express themselves using their full body.</p>
           
           <div className='context quarter'>
             <div><h4>Project Info</h4> 10 weeks, autumn 2021<br/>  Professional Product Design<br/>  <a href='https://www.uid.umu.se/en/' target="_blank">Umeå Institute of Design</a><br/></div>
@@ -53,7 +55,7 @@ export default function Page() {
 
           <h3>Research</h3>
 
-          <p>We conducted field research in Storuman, a municipality in the southern Lapland region that has been using remote healthcare solutions since the 1990s.</p>
+          <p>We conducted field research in Storuman, a municipality in southern Lapland that has been using remote healthcare solutions since the 1990s.</p>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/Od75MOOSzv4" frameBorder="0" allowFullScreen="1"></iframe>
           {/* <p>Some of the issues shared by the healthcare team during the field research trip were:
             <ul>
@@ -65,22 +67,22 @@ export default function Page() {
             </ul>
           </p> */}
 
-          <p>We mapped out our personal experiences with remote healthcare and mapped the healthcare system and its stakeholders to gain overview in its complexity.</p>
+          <p>We mapped out the remote healthcare system, our personal experiences with it, and the relevant stakeholders to gain overview of its complexity.</p>
           <div className='half'>
             <img src="./media/arch/vision.jpeg"/>
             <img src="./media/arch/map.png"/>
           </div>
 
           <h3>Sacrificial Prototyping</h3>
-          <p>Generating low-fi prototypes of ideas to sacrifice them for insights. We exposed these interventions to stakeholders and observed their approach to and perception of them. We also used them as conversation starters in interviews with doctors.
+          <p>Generating low-fi prototypes of ideas to sacrifice them for insights. We exposed these interventions to stakeholders and observed their approach to, and perception of them. We also used them as conversation starters in interviews with doctors.
           <br/><br/>
-           This gave us the opportunity to evaluate the relevance of directions early on in the process.</p>
+           This allowed us to evaluate the relevance of directions early in the process.</p>
           <img src="./media/arch/sacrificial.png"/>
 
           <h3>Evaluating</h3>
           <p>
-          In a remote workshop, we presented our physical map and sacrificial prototypes. We gave the participants time to give anonymous, written feedback using a form. When we asked the participants how they envisioned healthcare and how these concepts fit into their mental models, several trends emerged:
-          Personalised, Patient-centric, Social and Data Driven.<br/><br/> Next to the workshop, we conducted 8 expert interviews during the exploration and conceptualization phase of our design process.
+          In a remote workshop with the client and our colleagues, we presented our findings and sacrificial prototypes and gave them time to give anonymous, written feedback using a form. When we asked the participants how they envisioned healthcare, and how these concepts fit into their mental models, several trends emerged:
+          <i>Personalised</i>, <i>Patient-centric</i>, <i>Social</i> and <i>Data Driven</i>.<br/><br/> Next to the workshop, we conducted 8 expert interviews during the exploration and conceptualization phase of our design process.
           </p>
           <div className='half'>
             <img src="./media/arch/workshop.png"/>
@@ -90,11 +92,11 @@ export default function Page() {
 
 
           <h3>Bodystorming</h3>
-          <p>This method was used to gather insights in what a collaborative space could look like by acting out remote healthcare consultation scenarios and how technology would assist in this process.</p>
+          <p>We acted out remote healthcare consultation scenarios, and how technology could assist in this process. This method was used to gather insights into what a collaborative AR space could look and feel like. </p>
           <img src="./media/arch/bodystorming.png"/>
 
           <h3>Experience Prototyping</h3>
-          <p>I created a prototype to mimic the experience of interacting with the product, with the goal to gain a better understanding of bottlenecks and opportunities.
+          <p>I created a prototype to experience interacting with the product, with the goal to gain a better understanding of bottlenecks and opportunities.
           {/* <br/><br/>
           The setup consisted of:
             <ul>

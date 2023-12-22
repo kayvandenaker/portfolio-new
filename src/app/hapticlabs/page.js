@@ -12,7 +12,7 @@ export default function Page() {
         {/* <img src="./media/hapticlabs.png" className='page-hero'/> */}
         <h1>Hapticlabs — Highlights of freelance work.</h1>
         
-        <p>This is a collection of prototypes and demos I built for Hapticlabs, a company creating a no-code tool for exploring haptics. The purpose of the demos is to explore but also showcase functionalities, especially regarding integration into other software. </p>
+        <p>This is a collection of prototypes and demos I built for Hapticlabs, a company creating a no-code tool for exploring haptics. The purpose of the demos is to explore but also showcase functionalities, especially regarding integration into other software. <u><a href='https://www.github.com/HapticlabsIO' target='blank'>Check them on GitHub</a></u> </p>
 
         <h3>Unity</h3>
         <p>Coded an integration for Unity. Trigger haptics on grab, push, bubble pop and stretch. </p>
