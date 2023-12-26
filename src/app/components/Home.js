@@ -31,12 +31,28 @@ export default function Home() {
       for (let i = 0; i < columnCount; i++) {
         const column = [];
         GridItems.gridItems.forEach((item, j) => {
-          // move the second last object if columns = 3 to column 0
-          if(j !== GridItems.gridItems.length - 2 || columnCount !== 3){
+          // move the last object if columns = 4 to column 1
+          if(columnCount == 4){
+            if(j !== GridItems.gridItems.length - 1){
+              if(j % columnCount == i){ column.push(<GridItem key={item.link} src={item.src} poster={item.poster} title={item.title} info={item.info} link={item.link}/>) };
+            } else if (i == 1){
+              column.push(<GridItem key={item.link} src={item.src} poster={item.poster} title={item.title} info={item.info} link={item.link}/>)
+            }
+          // move the second and 4th last objects if columns = 3 to column 1
+          } else if(columnCount == 3){
+            if(j !== GridItems.gridItems.length - 2 && j !== GridItems.gridItems.length - 5){
+              if(j % columnCount == i){ column.push(<GridItem key={item.link} src={item.src} poster={item.poster} title={item.title} info={item.info} link={item.link}/>) };
+            } else if (i == 1){
+              column.push(<GridItem key={item.link} src={item.src} poster={item.poster} title={item.title} info={item.info} link={item.link}/>)
+            }
+          } else{
             if(j % columnCount == i){ column.push(<GridItem key={item.link} src={item.src} poster={item.poster} title={item.title} info={item.info} link={item.link}/>) };
-          } else if (i == 0){
-            column.push(<GridItem key={item.link} src={item.src} poster={item.poster} title={item.title} info={item.info} link={item.link}/>)
           }
+          // if(j !== GridItems.gridItems.length - 2 || columnCount !== 3){
+          //   if(j % columnCount == i){ column.push(<GridItem key={item.link} src={item.src} poster={item.poster} title={item.title} info={item.info} link={item.link}/>) };
+          // } else if (i == 1){
+          //   column.push(<GridItem key={item.link} src={item.src} poster={item.poster} title={item.title} info={item.info} link={item.link}/>)
+          // }
         })
         content.push(<div key={"c" + i} className='masonry-column'>{column}</div>);
       }

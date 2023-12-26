@@ -3,6 +3,13 @@
 export default {
     gridItems : [
     {
+      title: 'Thesis w/ Archetype AI',
+      info: 'WIP',
+      src: './media/archetype_banner_big.png',
+      // poster: './media/archetype_banner.jpg',
+      link: 'thesis'
+    },
+    {
       title: 'Tiles',
       info: 'Case Study',
       src: './media/tiles_small.mp4',
