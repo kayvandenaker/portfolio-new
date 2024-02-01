@@ -1,4 +1,4 @@
-.container{
+/* .container{
     padding: 1.5rem;
     margin: 0 auto;
     max-width: 2000px;
@@ -8,6 +8,12 @@
     .container{
         padding: 1rem;
     }
+} */
+
+.container{
+    max-width: 1440px;
+    padding: 1.5rem;
+    margin: 0 auto;
 }
 
 .intro{
@@ -59,10 +65,9 @@
     gap: 10px;
 }
 
-/* @media only screen and (min-width: 2014px) { */
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1400px) {
     .container{
-        padding: 3rem;
+        padding: 2rem 1.5rem;
     }
     .intro, .outro{
         font-size: 20px;
@@ -83,6 +88,19 @@
         gap: 12px;
     }
 }
+
+@media only screen and (min-width: 1508px) {
+    .container{
+        padding: 3rem 1.5rem;
+    }
+}
+
+
+@media only screen and (max-width: 760px) {
+    .container{
+        padding: 1.5rem 1rem;
+    }
+} 
 
 .contact-container{
     cursor: default;

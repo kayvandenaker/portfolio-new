@@ -23,7 +23,7 @@ export default function Home() {
   const [columnCount, setColumnCount] = useState(0);
 
   
-  useEffect(() => {setColumnCount(isMobile ? 1 : isTablet ? 2 : isLaptop ? 3 : isDesktop ? 4 : 0)}, [isMobile, isTablet, isLaptop, isDesktop])
+  useEffect(() => {setColumnCount(isMobile ? 1 : isTablet ? 2 : isLaptop ? 3 : isDesktop ? 3 : 0)}, [isMobile, isTablet, isLaptop, isDesktop])
   
   useEffect(() => {
     if(columnCount !== 0){
