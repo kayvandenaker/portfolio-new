@@ -65,30 +65,45 @@ export default function Home() {
   return (
     <div className='container'>
       <div className='intro'>
+          {/* <p>
+            <b>Kay van den Aker</b><br/><br/>
+            Designer and prototyper, exploring interactions that fuse digital and physical.
+          </p> */}
           <p>
-          <b>Kay van den Aker</b><br/><br/>
-          Designer and prototyper, exploring interactions that fuse digital and physical.
+            <b>Kay van den Aker</b><br/><br/>
+            Designer and prototyper, exploring interactions that fuse digital and physical. Turning ambiguous ideas into experiences by gluing together various hard- and software.
+            <br/><br/>
+            {/* Currently freelancing for <a href='https://www.hapticlabs.io' target="_blank">Hapticlabs</a> and <a href='https://www.protopie.io' target="_blank">ProtoPie</a> while mastering IxD in <a href='https://www.umu.se/en/umea-institute-of-design/' target="_blank">Umeå</a>, formerly at <a href='https://www.above.se' target="_blank">Above</a>, <a href='https://www.arduino.cc' target="_blank">Arduino</a>, <a href='https://www.rolls-roycemotorcars.com/' target="_blank">Rolls-Royce</a> and <a href='https://www.bmw.com' target="_blank">BMW</a>. */}
+            Currently doing master thesis with <a href='https://www.archetypeai.io/' target="_blank">Archetype AI</a> in <a href='https://www.umu.se/en/umea-institute-of-design/' target="_blank">Umeå</a>, formerly at <a href='https://www.hapticlabs.io' target="_blank">Hapticlabs</a>, <a href='https://www.protopie.io' target="_blank">ProtoPie</a>, <a href='https://www.rolls-roycemotorcars.com/' target="_blank">Rolls-Royce</a>, <a href='https://www.above.se' target="_blank">Above</a>, <a href='https://www.arduino.cc' target="_blank">Arduino</a> and <a href='https://www.bmw.com' target="_blank">BMW</a>.
+            <br/><br/>
+            <span className='contact-container'>
+                <a className='link' href="mailto:kayvandenaker@gmail.com" target="_blank">Email</a>
+                <a className="link" href="https://www.linkedin.com/in/kayvandenaker" target="_blank">LinkedIn</a>
+                <a className="link" href="https://www.instagram.com/aker.industries/" target="_blank">Instagram</a>
+                <a className="link" href="https://twitter.com/kayvandenaker" target="_blank">X</a>
+                <a className="link" href='./files/Kay_van_den_Aker.pdf' target="_blank">Resume</a>
+            </span>
           </p>
       </div>
 
       <div className={'masonry ' + (columnCount ? "loaded" : "")}>{masonryContent}</div>
 
-      <div className='outro'>
-      <p>
-          <b>About</b><br/><br/>
-          Designer and prototyper, exploring interactions that fuse digital and physical. Turning ambiguous ideas into experiences by gluing together various hard- and software.
-          <br/><br/>
-          Currently freelancing for <a href='https://www.hapticlabs.io' target="_blank">Hapticlabs</a> and <a href='https://www.protopie.io' target="_blank">ProtoPie</a> while mastering IxD in <a href='https://www.umu.se/en/umea-institute-of-design/' target="_blank">Umeå</a>, formerly at <a href='https://www.above.se' target="_blank">Above</a>, <a href='https://www.arduino.cc' target="_blank">Arduino</a>, <a href='https://www.rolls-roycemotorcars.com/' target="_blank">Rolls-Royce</a> and <a href='https://www.bmw.com' target="_blank">BMW</a>.
-          <br/><br/>
-          <span className='contact-container'>
-              <a className='link' href="mailto:kayvandenaker@gmail.com" target="_blank">Email</a>
-              <a className="link" href="https://www.instagram.com/aker.industries/" target="_blank">Instagram</a>
-              <a className="link" href="https://www.linkedin.com/in/kayvandenaker" target="_blank">LinkedIn</a>
-              <a className="link" href="https://twitter.com/kayvandenaker" target="_blank">Twitter</a>
-              <a className="link" href='./files/Kay_van_den_Aker.pdf' target="_blank">Resume</a>
-          </span>
-        </p>
-        </div>
+      {/* <div className='outro'>
+        <p>
+            <b>About</b><br/><br/>
+            Designer and prototyper, exploring interactions that fuse digital and physical. Turning ambiguous ideas into experiences by gluing together various hard- and software.
+            <br/><br/>
+            Currently freelancing for <a href='https://www.hapticlabs.io' target="_blank">Hapticlabs</a> and <a href='https://www.protopie.io' target="_blank">ProtoPie</a> while mastering IxD in <a href='https://www.umu.se/en/umea-institute-of-design/' target="_blank">Umeå</a>, formerly at <a href='https://www.above.se' target="_blank">Above</a>, <a href='https://www.arduino.cc' target="_blank">Arduino</a>, <a href='https://www.rolls-roycemotorcars.com/' target="_blank">Rolls-Royce</a> and <a href='https://www.bmw.com' target="_blank">BMW</a>.
+            <br/><br/>
+            <span className='contact-container'>
+                <a className='link' href="mailto:kayvandenaker@gmail.com" target="_blank">Email</a>
+                <a className="link" href="https://www.instagram.com/aker.industries/" target="_blank">Instagram</a>
+                <a className="link" href="https://www.linkedin.com/in/kayvandenaker" target="_blank">LinkedIn</a>
+                <a className="link" href="https://twitter.com/kayvandenaker" target="_blank">Twitter</a>
+                <a className="link" href='./files/Kay_van_den_Aker.pdf' target="_blank">Resume</a>
+            </span>
+          </p>
+        </div> */}
     </div>
   )
 }

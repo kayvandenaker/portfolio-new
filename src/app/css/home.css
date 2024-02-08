@@ -17,19 +17,20 @@
 }
 
 .intro{
-    max-width: 400px;
+    /* max-width: 400px; */
+    max-width: 570px;
     margin-bottom: 1.5rem;
     font-size: 18px;
 }
 
-.outro{
+/* .outro{
     margin-top: 1.5rem;
     font-size: 18px; 
     max-width: 570px;
-}
+} */
 
 .intro b, .outro b{
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -37,7 +38,7 @@
     margin-bottom: 0;
 }
 
-.outro a:hover{
+.intro a:hover{
     text-decoration: underline;
 }
 
@@ -70,10 +71,8 @@
         padding: 2rem 1.5rem;
     }
     .intro, .outro{
-        font-size: 20px;
-    }
-    .intro b, .outro b{
-        font-size: 23px;
+        font-size: 19px;
+        max-width: 600px;
     }
     .outro{
         max-width: 620px;
@@ -92,6 +91,12 @@
 @media only screen and (min-width: 1508px) {
     .container{
         padding: 3rem 1.5rem;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .intro{
+        /* max-width: 400px; */
+        /* max-width: 570px; */
     }
 }
 
