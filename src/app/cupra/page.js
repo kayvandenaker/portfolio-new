@@ -10,7 +10,7 @@ export default function Page() {
       <div className="page">
         <Close />
         {/* <img src="./media/cupra_render.png" className='page-hero'/> */}
-        <h1>Cupra — A ferro fluid intelligence co-existing in a vehicle.</h1>
+        <h1>Cupra Ferro — A fluid intelligence co-existing in a vehicle.</h1>
         <h3>Opportunity</h3>
         <p>Together with Cupra and master students from the Transportation Design program at UID, we explored what future sensorial in-car experiences could look like.</p>
         <h3>Outcome</h3>
