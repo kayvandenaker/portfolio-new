@@ -52,6 +52,7 @@ export default {
       poster: './media/bmw_poster.jpg',
       link: 'bmw'
     },
+
     {
       title: 'Radar Presence',
       info: 'UWB / ProtoPie',
@@ -86,14 +87,14 @@ export default {
       poster: './media/bodystorming_poster.jpg',
       link: 'bodystorming'
     },
-    {
-      title: 'Shader Noise',
-      info: 'Blender',
-      src: './media/colors_small.mp4',
-      poster: './media/colors_poster.jpg',
-      link: 'noise'
-    },
 
+    {
+      title: 'Cupra Ferro',
+      info: 'Blender / ProtoPie',
+      src: './media/cupra_driving_bw.mp4',
+      poster: './media/cupra_poster.png',
+      link: 'cupra'
+    },
     {
       title: 'IR TouchBar',
       info: 'MadMapper / ProtoPie',
@@ -108,6 +109,8 @@ export default {
       poster: './media/kinect_poster.jpg',
       link: 'kitchen'
     },
+
+
     {
       title: 'Trackpad',
       info: 'Arduino / ProtoPie',
@@ -121,5 +124,13 @@ export default {
       src: './media/midi.jpg',
       link: 'midi'
     },
+    {
+      title: 'Shader Noise',
+      info: 'Blender',
+      src: './media/colors_small.mp4',
+      poster: './media/colors_poster.jpg',
+      link: 'noise'
+    },
+
   ]
 };
