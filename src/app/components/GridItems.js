@@ -24,18 +24,10 @@ export default {
       link: 'arch'
     },
     {
-      title: 'IR TouchBar',
-      info: 'MadMapper / ProtoPie',
-      src: './media/touchbar_small.mp4',
-      poster: './media/touchbar_poster.jpeg',
-      link: 'touchbar'
-    },
-    {
-      title: 'ProtoPie',
-      info: 'Freelance Work',
-      src: './media/protopie_laundry_small.mp4',
-      poster: './media/protopie_laundry_poster.jpg',
-      link: 'protopie'
+      title: 'Pixel Art Generator',
+      info: 'ChatGPT API',
+      src: './media/gpt_heart.jpg',
+      link: 'gridpt'
     },
     {
       title: 'Hapticlabs',
@@ -45,11 +37,20 @@ export default {
       link: 'hapticlabs'
     },
     {
-      title: 'Entering Digital',
-      info: 'Unity / Leap Motion',
-      src: './media/lines_small.mp4',
-      poster: './media/lines_poster.jpeg',
-      link: 'lines'
+      title: 'ProtoPie',
+      info: 'Freelance Work',
+      src: './media/protopie_laundry_small.mp4',
+      poster: './media/protopie_laundry_poster.jpg',
+      link: 'protopie'
+    },
+
+
+    {
+      title: 'BMW Group',
+      info: 'Internship Highlights',
+      src: './media/bmw_small.mp4',
+      poster: './media/bmw_poster.jpg',
+      link: 'bmw'
     },
     {
       title: 'Radar Presence',
@@ -66,17 +67,11 @@ export default {
       link: 'timer'
     },
     {
-      title: 'Pixel Art Generator',
-      info: 'ChatGPT API',
-      src: './media/gpt_heart.jpg',
-      link: 'gridpt'
-    },
-    {
-      title: 'BMW Group',
-      info: 'Internship Highlights',
-      src: './media/bmw_small.mp4',
-      poster: './media/bmw_poster.jpg',
-      link: 'bmw'
+      title: 'Entering Digital',
+      info: 'Unity / Leap Motion',
+      src: './media/lines_small.mp4',
+      poster: './media/lines_poster.jpeg',
+      link: 'lines'
     },
     {
       title: '3D Head',
@@ -98,6 +93,14 @@ export default {
       poster: './media/colors_poster.jpg',
       link: 'noise'
     },
+
+    {
+      title: 'IR TouchBar',
+      info: 'MadMapper / ProtoPie',
+      src: './media/touchbar_small.mp4',
+      poster: './media/touchbar_poster.jpeg',
+      link: 'touchbar'
+    },
     {
       title: 'Kinect Kitchen',
       info: 'TouchDesigner / Kinect',
@@ -106,17 +109,17 @@ export default {
       link: 'kitchen'
     },
     {
-      title: 'MIDI Controller',
-      info: 'Arduino',
-      src: './media/midi.jpg',
-      link: 'midi'
-    },
-    {
       title: 'Trackpad',
       info: 'Arduino / ProtoPie',
       src: './media/trackpad_small.mp4',
       poster: './media/trackpad_poster.jpg',
       link: 'trackpad'
-    }
+    },
+    {
+      title: 'MIDI Controller',
+      info: 'Arduino',
+      src: './media/midi.jpg',
+      link: 'midi'
+    },
   ]
 };

@@ -39,12 +39,12 @@ export default function Home() {
               column.push(<GridItem key={item.link} src={item.src} poster={item.poster} title={item.title} info={item.info} link={item.link}/>)
             }
           // move the second and 4th last objects if columns = 3 to column 1
-          } else if(columnCount == 3){
-            if(j !== GridItems.gridItems.length - 2 && j !== GridItems.gridItems.length - 5){
-              if(j % columnCount == i){ column.push(<GridItem key={item.link} src={item.src} poster={item.poster} title={item.title} info={item.info} link={item.link}/>) };
-            } else if (i == 1){
-              column.push(<GridItem key={item.link} src={item.src} poster={item.poster} title={item.title} info={item.info} link={item.link}/>)
-            }
+          // } else if(columnCount == 3){
+          //   if(j !== GridItems.gridItems.length - 2 && j !== GridItems.gridItems.length - 5){
+          //     if(j % columnCount == i){ column.push(<GridItem key={item.link} src={item.src} poster={item.poster} title={item.title} info={item.info} link={item.link}/>) };
+          //   } else if (i == 1){
+          //     column.push(<GridItem key={item.link} src={item.src} poster={item.poster} title={item.title} info={item.info} link={item.link}/>)
+          //   }
           } else{
             if(j % columnCount == i){ column.push(<GridItem key={item.link} src={item.src} poster={item.poster} title={item.title} info={item.info} link={item.link}/>) };
           }
