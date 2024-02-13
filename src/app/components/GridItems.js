@@ -87,7 +87,6 @@ export default {
       poster: './media/bodystorming_poster.jpg',
       link: 'bodystorming'
     },
-
     {
       title: 'Cupra Ferro',
       info: 'Blender / ProtoPie',
@@ -109,8 +108,6 @@ export default {
       poster: './media/kinect_poster.jpg',
       link: 'kitchen'
     },
-
-
     {
       title: 'Trackpad',
       info: 'Arduino / ProtoPie',
