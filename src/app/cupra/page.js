@@ -55,7 +55,7 @@ export default function Page() {
           <p>The ferro fluid has different shapes and behavior depending on the driving mode.</p>
 
         <img src="./media/cupra_modes.png"/>
-
+{/* 
           <div className='half'>
             <div>
               <img src="./media/cupra_steering_drive.png"/>
@@ -65,7 +65,7 @@ export default function Page() {
               <img src="./media/cupra_steering_speed.png"/>
               <div className='image-details'>Speed</div>
             </div>
-          </div>
+          </div> */}
 
 
           <h3>Experience Prototyping</h3>
