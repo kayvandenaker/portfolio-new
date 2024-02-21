@@ -100,6 +100,12 @@
     }
 }
 
+.mobileText{
+    display: none;
+}
+.desktopText{
+    display: inline;
+}
 
 @media only screen and (max-width: 760px) {
     .intro{
@@ -107,6 +113,12 @@
     }
     .container{
         padding: 1.2rem 1rem 2rem 1rem;
+    }
+    .mobileText{
+        display: inline;
+    }
+    .desktopText{
+        display: none;
     }
 } 
 
