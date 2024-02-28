@@ -39,24 +39,24 @@ export default function Page() {
           <h1>So far...</h1>
 
           <h3>Zero-Shot Object Detection</h3>
-          <p>Hand overlapping with input prompts to look for ("a photo of a pen").</p>
+          <p>Hand overlapping with input prompts to look for "a photo of a pen".</p>
           <img src="./media/thesis/pen.png"/>
           <div className='image-details'>MediaPipe and OwlViT.</div>
 
 
-          <h3>Accelerometer analysis</h3>
-          <p>Letting an LLM make sense of raw sensor data.</p>
+          <h3>Accelerometer Analysis</h3>
+          <p>LLM making sense of raw sensor data.</p>
           <video src="./media/thesis/imu.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
           <div className='image-details'>Adafruit Feather Sense with OpenAI's LLM (Python).</div>
           
 
           <h3>Haptic Glove</h3>
-          <p>AI giving feedback through haptics – incorrect: quick double pulse, correct: slower single pulse, </p>
+          <p>AI giving feedback through haptics. Incorrect is a quick double pulse, correct is a slower single pulse.</p>
           <video src="./media/thesis/haptics.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
           <div className='image-details'>MediaPipe, YOLO v8 and Hapticlabs (Python).</div>
 
           <h3>Stethoscope</h3>
-          <p>Understand your patient together with AI in the physical world.</p>
+          <p>Understand the patient together with AI.</p>
           <video src="./media/thesis/stethoscope.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
           <div className='image-details'>A01 Summarize API, OpenAI's LLM/TTS, OpenCV, Librosa and Arduino (Python).</div>
 
