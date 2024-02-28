@@ -14,8 +14,8 @@ export default function Page() {
         <h3>Work In Progress</h3>
         <p>This page is a living document of the master thesis I just started – digging into what physical AI as a material means for the world of interaction design. It aims to explore the possibilities and opportunities that arise when a space understands, reasons, and interacts with the people and things inside of it. How our experiences with our environment change, and our relationship with technology transforms through physical AI. 
           
-          <img src="./media/archetype_overview.jpg"/>
-          <div className='image-details'>Moving the stage of interacting with AI from a screen, to the world around us.</div>
+          {/* <img src="./media/archetype_overview.jpg"/>
+          <div className='image-details'>Moving the stage of interacting with AI from a screen, to the world around us.</div> */}
 
           
           <h3>Partner</h3>
@@ -34,6 +34,38 @@ export default function Page() {
             </div>
             <div><h4>Partner</h4> <a href='https://www.archetypeai.io/' target="_blank">Archetype AI</a></div>
           </div>
+
+
+          <h1>So far...</h1>
+
+          <h3>Zero-Shot Object Detection</h3>
+          <p>Hand overlapping with input prompts to look for ("a photo of a pen").</p>
+          <img src="./media/thesis/pen.png"/>
+          <div className='image-details'>MediaPipe and OwlViT.</div>
+
+
+          <h3>Accelerometer analysis</h3>
+          <p>Letting an LLM make sense of raw sensor data.</p>
+          <video src="./media/thesis/imu.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
+          <div className='image-details'>Adafruit Feather Sense with OpenAI's LLM (Python).</div>
+          
+
+          <h3>Haptic Glove</h3>
+          <p>AI giving feedback through haptics – incorrect: quick double pulse, correct: slower single pulse, </p>
+          <video src="./media/thesis/haptics.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
+          <div className='image-details'>MediaPipe, YOLO v8 and Hapticlabs (Python).</div>
+
+          <h3>Stethoscope</h3>
+          <p>Understand your patient together with AI in the physical world.</p>
+          <video src="./media/thesis/stethoscope.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
+          <div className='image-details'>A01 Summarize API, OpenAI's LLM/TTS, OpenCV, Librosa and Arduino (Python).</div>
+
+          <h3>Binoculars</h3>
+          <p>AI powered depth camera.</p>
+          <video src="./media/thesis/binoculars.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
+          <div className='image-details'>A01 Summarize API, iPhone's LiDAR and Adafruit Feather Sense as BLE keyboard (Swift).</div>
+
+          <p>More coming soon...</p>
           
           <Nav />
 
