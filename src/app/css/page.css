@@ -164,7 +164,7 @@ iframe + .context{
     grid-gap: 1rem;
 }
 
-video:not(.gridItemMedia video){
+video:not(.grid-media-container video){
     max-width: 100%;
     width: auto;
     display: block;
