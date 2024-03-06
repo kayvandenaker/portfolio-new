@@ -67,16 +67,25 @@
     height: calc(50rem - 660px);
     width : auto;
     border-radius: 2px;
-    /* margin-right: 1rem; */
-    padding-right: 1rem;
-    background-color: white;
-    /* margin-bottom: 1rem; */
+    background-color: #eee;
+    border-right: 1rem solid white;
     display: inline-block;
     vertical-align:top;
+
+    animation-name: loadingFade;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
+@keyframes loadingFade {
+    0% {background-color: #eee;}
+    50% {background-color: #f6f6f6;}
+    100% {background-color: #eee;}
+  }
+
 .grid-media-container > *:last-child{
-    padding-right: 0;
+    border-right: none;
 }
 
 .grid-item-head-small{
