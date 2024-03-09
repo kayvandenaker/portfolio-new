@@ -54,16 +54,19 @@ export default function Home() {
       {GridItems.gridItems.map((item, j) => {
         return (
           <Link href={"/" + item.link} key={"link-to-" +  j + "-" + item.link} >
+          <div className="grid-item" 
+            onMouseEnter={() => !isSmall ? (elementsRef.current[j].current.scrollLeft = 0) : null} 
+            onMouseMove={(event) => !isSmall ? (elementsRef.current[j].current.scrollLeft += event.movementX * 5) : null} 
+          > 
           {/* <div className="grid-item" onMouseEnter={() => elementsRef.current[j].current.scrollLeft = 0} onMouseMove={(event) => elementsRef.current[j].current.scrollLeft += event.movementX * (elementsRef.current[j].current.scrollWidth - elementsRef.current[j].current.clientWidth) / 150} >  */}
-          <div className="grid-item" onMouseEnter={() => elementsRef.current[j].current.scrollLeft = 0} onMouseMove={(event) => elementsRef.current[j].current.scrollLeft += event.movementX * 5} > 
-          {/* <div className="grid-item" onMouseMove={(event) => elementsRef.current[j].current.scrollLeft = (elementsRef.current[j].current.scrollWidth - elementsRef.current[j].current.clientWidth) - (elementsRef.current[j].current.scrollWidth - elementsRef.current[j].current.clientWidth) * (event.pageX - 1.5 * parseFloat(getComputedStyle(document.documentElement).fontSize)) / (window.innerWidth - 3 * parseFloat(getComputedStyle(document.documentElement).fontSize))}>  */}
           {/* <div className="grid-item" onMouseMove={(event) => elementsRef.current[j].current.scrollLeft = (elementsRef.current[j].current.scrollWidth - elementsRef.current[j].current.clientWidth) - (elementsRef.current[j].current.scrollWidth - elementsRef.current[j].current.clientWidth) * (event.pageX - 1.5 * parseFloat(getComputedStyle(document.documentElement).fontSize)) / (window.innerWidth - 3 * parseFloat(getComputedStyle(document.documentElement).fontSize))}>  */}
             {!isSmall ? 
-            <div className="grid-row">
-              <span className="grid-highlight">{item.title}</span>
-              <span>{item.info}</span>
-              <span>{item.date}</span> 
-            </div> : <></>}
+              <div className="grid-row">
+                <span className="grid-highlight">{item.title}</span>
+                <span>{item.info}</span>
+                <span>{item.date}</span> 
+              </div> 
+              : <></>}
               {item.media && !isSmall ? (
                 <div className="grid-media-container" ref={elementsRef.current[j]}>
                 {item.media.map((media, k) => {
