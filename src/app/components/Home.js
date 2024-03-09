@@ -54,7 +54,8 @@ export default function Home() {
       {GridItems.gridItems.map((item, j) => {
         return (
           <Link href={"/" + item.link} key={"link-to-" +  j + "-" + item.link} >
-          <div className="grid-item" onMouseEnter={() => elementsRef.current[j].current.scrollLeft = 0} onMouseMove={(event) => elementsRef.current[j].current.scrollLeft += event.movementX * (elementsRef.current[j].current.scrollWidth - elementsRef.current[j].current.clientWidth) / 150} > 
+          {/* <div className="grid-item" onMouseEnter={() => elementsRef.current[j].current.scrollLeft = 0} onMouseMove={(event) => elementsRef.current[j].current.scrollLeft += event.movementX * (elementsRef.current[j].current.scrollWidth - elementsRef.current[j].current.clientWidth) / 150} >  */}
+          <div className="grid-item" onMouseEnter={() => elementsRef.current[j].current.scrollLeft = 0} onMouseMove={(event) => elementsRef.current[j].current.scrollLeft += event.movementX * 5} > 
           {/* <div className="grid-item" onMouseMove={(event) => elementsRef.current[j].current.scrollLeft = (elementsRef.current[j].current.scrollWidth - elementsRef.current[j].current.clientWidth) - (elementsRef.current[j].current.scrollWidth - elementsRef.current[j].current.clientWidth) * (event.pageX - 1.5 * parseFloat(getComputedStyle(document.documentElement).fontSize)) / (window.innerWidth - 3 * parseFloat(getComputedStyle(document.documentElement).fontSize))}>  */}
           {/* <div className="grid-item" onMouseMove={(event) => elementsRef.current[j].current.scrollLeft = (elementsRef.current[j].current.scrollWidth - elementsRef.current[j].current.clientWidth) - (elementsRef.current[j].current.scrollWidth - elementsRef.current[j].current.clientWidth) * (event.pageX - 1.5 * parseFloat(getComputedStyle(document.documentElement).fontSize)) / (window.innerWidth - 3 * parseFloat(getComputedStyle(document.documentElement).fontSize))}>  */}
             {!isSmall ? 
