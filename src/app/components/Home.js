@@ -50,7 +50,7 @@ export default function Home() {
         {/* <span>Client</span> */}
         <span>Date</span>
       </div> : <></>}
-      <div className="grid">
+      <div className="grid" onMouseEnter={() => document.documentElement.style.setProperty('--scrollWidth', (window.innerWidth - (window.innerWidth -  960) / 2 - 27) + "px")}>
       {GridItems.gridItems.map((item, j) => {
         return (
           <Link href={"/" + item.link} key={"link-to-" +  j + "-" + item.link} >

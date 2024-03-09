@@ -7,7 +7,7 @@ export default {
       partner: "Archetype AI",
       info: "Thesis with Archetype AI",
       date: "Ongoing",
-      media: ["./media/thumbnails/thesis_binoculars_thumbnail.mp4", "./media/thumbnails/thesis_stethoscope_thumbnail.mp4", "./media/thumbnails/thesis_imu_thumbnail.mp4", "./media/thumbnails/thesis_haptics_thumbnail.mp4"],
+      media: ["./media/thumbnails/thesis_sketch_thumbnail.mp4","./media/thumbnails/thesis_binoculars_thumbnail.mp4", "./media/thumbnails/thesis_stethoscope_thumbnail.mp4", "./media/thumbnails/thesis_imu_thumbnail.mp4", "./media/thumbnails/thesis_haptics_thumbnail.mp4"],
       link: "thesis",
       poster: "./media/archetype_banner_big.png"
     },

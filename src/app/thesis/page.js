@@ -65,6 +65,11 @@ export default function Page() {
           <video src="./media/thesis/binoculars.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
           <div className='image-details'>A01 Summarize API, iPhone's LiDAR and Adafruit Feather Sense as BLE keyboard (Swift).</div>
 
+          <h3>Sketch Assistant</h3>
+          <p>What if you could sketch with AI together in the physical world?</p>
+          <video src="./media/thesis/sketch.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
+          <div className='image-details'>Latent Consistency Model and Adafruit Feather Sense as BLE keyboard (TouchDesigner).</div>
+
           <p>More coming soon...</p>
           
           <Nav />
