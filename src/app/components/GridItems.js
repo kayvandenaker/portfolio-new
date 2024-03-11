@@ -1,4 +1,7 @@
 // ffmpeg -i input.mp4 -vframes 1 -vf "scale=640:480" output.jpeg
+// ffmpeg -i <input> -vframes 1 <output>.jpeg
+
+// for file in *.mp4; do ffmpeg -i "$file" -vf "scale=iw*sar:ih,setsar=1" -vframes 1 -q:v 2 "${file%.mp4}_poster.jpg"; done
 
 export default {
   gridItems: [

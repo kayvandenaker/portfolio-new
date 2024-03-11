@@ -72,7 +72,9 @@ export default function Home() {
                 {item.media.map((media, k) => {
                   return media.endsWith("mp4") ? (
                     <video 
-                      key={"video-" + j + "-" + k} loop playsInline autoPlay muted src={media} type="video/mp4" 
+                      key={"video-" + j + "-" + k} loop playsInline autoPlay muted type="video/mp4" 
+                      src={media} 
+                      poster={media.replace(".mp4", "_poster.jpg")}
                       // onMouseOver={(event) => event.target.play()} 
                       // onMouseOut={(event) => event.target.pause()}
                     />
