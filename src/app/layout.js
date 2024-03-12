@@ -1,6 +1,6 @@
 import './globals.css'
 import { Inter, Space_Grotesk } from 'next/font/google'
-import { Analytics } from "@vercel/analytics/react"
+// import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ['latin'] })
 const space_grotesk = Space_Grotesk({ subsets: ['latin'] })
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {children}
-        <Analytics />
+        {/* <Analytics /> */}
       </body>
     </html>
   )
