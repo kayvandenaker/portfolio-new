@@ -169,7 +169,7 @@ video:not(.grid-media-container video){
     width: auto;
     display: block;
     border-radius: var(--img-radius);
-    max-height: 90vh;
+    max-height: 800px;
     border-radius: 2px;
     margin: 0 auto 1rem auto;
 }
