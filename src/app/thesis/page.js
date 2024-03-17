@@ -51,24 +51,29 @@ export default function Page() {
           
 
           <h3>Haptic Glove</h3>
-          <p>AI giving feedback through haptics. Incorrect is a quick double pulse, correct is a slower single pulse.</p>
+          <p>Giving feedback through haptics, incorrect is a quick double pulse, correct is a slower single pulse.</p>
           <video src="./media/thesis/haptics.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
           <div className='image-details'>MediaPipe, YOLO v8 and Hapticlabs (Python).</div>
 
           <h3>Stethoscope</h3>
-          <p>Understand the patient together with AI.</p>
+          <p>Understand the patient together with AI. Stay in the moment with the other person, while listening to the heart beat and getting insights from the AI.</p>
           <video src="./media/thesis/stethoscope.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
           <div className='image-details'>A01 Summarize API, OpenAI's LLM/TTS, OpenCV, Librosa and Arduino (Python).</div>
 
           <h3>Binoculars</h3>
-          <p>AI powered depth camera.</p>
+          <p>AI powered depth camera. Switch between color and depth view, and get insights from the AI about the main object in the viewport.</p>
           <video src="./media/thesis/binoculars.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
           <div className='image-details'>A01 Summarize API, iPhone's LiDAR and Adafruit Feather (Swift).</div>
 
           <h3>Sketch Assistant</h3>
-          <p>What if you could sketch with AI together in the physical world?</p>
+          <p>What if you could sketch with AI together in the physical world? Using traditional tools with an AI layer projected on top.</p>
           <video src="./media/thesis/sketch.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
           <div className='image-details'>Latent Consistency Model, Projector and Adafruit Feather (TouchDesigner).</div>
+
+          <h3>Dynamic Actuators</h3>
+          <p>An LLM deciding what interaction is suitable for the context and the prompt. It can communicate to the person through the desk lamp, the fan, the waving arm and/or the speaker.</p>
+          <video src="./media/thesis/dynamic_actuators.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
+          <div className='image-details'>A01 Summarize API, OpenAI's LLM and Arduino (Python).</div>
 
           <p>More coming soon...</p>
           
