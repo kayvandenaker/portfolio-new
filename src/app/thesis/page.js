@@ -75,6 +75,11 @@ export default function Page() {
           <video src="./media/thesis/dynamic_actuators.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
           <div className='image-details'>A01 Summarize API, OpenAI's LLM and Arduino (Python).</div>
 
+          <h3>AI as a 6th sense</h3>
+          <p>What if the space understands your intention, and it could let you feel the relevant information of an object when you interact with it, like a 6th sense. <br/><br/>In this example, a person wants to know if the parcel might be damaged. The AI will pick the most relevant history of the sensor data, and show it through haptics to give the person an understanding of how the parcel was handled, and whether it might be damaged or not.</p>
+          <video src="./media/thesis/box.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
+          <div className='image-details'>Hapticlabs, OpenAI's LLM and Adafruit Feather (Python).</div>
+
           <p>More coming soon...</p>
           
           <Nav />
