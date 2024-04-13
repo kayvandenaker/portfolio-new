@@ -21,10 +21,10 @@ export default function Page() {
           For this project I am collaborating with Archetype AI, a San-Francisco based startup born out of Google's ATAP department (project Soli). Archetype AI leads the way in developing a Large Behavior Model, which makes sense of the physical world around us by fusing sensor data with natural language. Check the video bellow for more info!
 
 
-          <br/><br/>
-          <iframe src="https://www.youtube.com/embed/HnUc-x6yWrI?si=fpYkflUWoy3t-tbb" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-
         </p>
+          <iframe src="https://www.youtube.com/embed/HnUc-x6yWrI?si=fpYkflUWoy3t-tbb" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+          {/* <br/><br/> */}
+
           <div className='context quarter'>
             <div>
               <h4>Project Info</h4> 

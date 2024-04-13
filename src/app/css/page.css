@@ -101,9 +101,9 @@ iframe {
 }
 
 
-iframe + .context{
+/* iframe + .context{
     border-top: none;
-}
+} */
 
 .context{
     margin-bottom: 4rem;
