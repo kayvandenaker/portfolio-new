@@ -16,7 +16,9 @@ export default function Page() {
 
           {/* <br/><br/>
           If you're interested or want to chat about it, feel free to shoot an <u><a href="mailto:kayvandenaker@gmail.com" target="_blank">email</a></u>. */}
-          
+          </p>
+          <blockquote>As AI understands more of the physical world, it enables us to make sense of our surroundings in new and easier ways.</blockquote>
+          <p>
           <h3>Partner</h3>
           For this project I am collaborating with Archetype AI, a San-Francisco based startup born out of Google's ATAP department (project Soli). Archetype AI leads the way in developing a Large Behavior Model, which makes sense of the physical world around us by fusing sensor data with natural language. Check the video bellow for more info!
 
