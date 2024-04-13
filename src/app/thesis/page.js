@@ -9,20 +9,20 @@ export default function Page() {
     return (
       <div className="page">
         <Close />
-        <img src="./media/archetype_banner_big.png" className='page-hero'/>
+        {/* <img src="./media/archetype_banner_big.png" className='page-hero'/> */}
         <h1>Thesis – Physical AI as an interaction design material.</h1>
         <h3>Work In Progress</h3>
-        <p>This page is a living document of the master thesis I just started – digging into what physical AI as a material means for the world of interaction design. It aims to explore the possibilities and opportunities that arise when a space understands, reasons, and interacts with the people and things inside of it. How our experiences with our environment change, and our relationship with technology transforms through physical AI. 
-          
-          {/* <img src="./media/archetype_overview.jpg"/>
-          <div className='image-details'>Moving the stage of interacting with AI from a screen, to the world around us.</div> */}
+        <p>This page is a living document of the master thesis I am currently working on – digging into what physical AI as a material means for the world of interaction design. It aims to explore the possibilities and opportunities that arise when a space understands, reasons, and interacts with the people and things inside of it. How our experiences with our environment change, and our relationship with technology transforms through physical AI. 
 
+          {/* <br/><br/>
+          If you're interested or want to chat about it, feel free to shoot an <u><a href="mailto:kayvandenaker@gmail.com" target="_blank">email</a></u>. */}
           
           <h3>Partner</h3>
-          For this project I'll be collaborating with Archetype AI, a San-Francisco based startup born out of Google's ATAP department (project Soli). Archetype AI leads the way in developing a physical AI platform called a Large Behavior Model, which makes sense of the physical world around it by looking for behavioural patterns through various sensors such as camera, microphone, radar, IMU etcetera.
+          For this project I am collaborating with Archetype AI, a San-Francisco based startup born out of Google's ATAP department (project Soli). Archetype AI leads the way in developing a Large Behavior Model, which makes sense of the physical world around us by fusing sensor data with natural language. Check the video bellow for more info!
+
 
           <br/><br/>
-          If you're interested or want to chat about it, feel free to shoot an <u><a href="mailto:kayvandenaker@gmail.com" target="_blank">email</a></u>.
+          <iframe src="https://www.youtube.com/embed/HnUc-x6yWrI?si=fpYkflUWoy3t-tbb" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 
         </p>
           <div className='context quarter'>
@@ -36,7 +36,7 @@ export default function Page() {
           </div>
 
 
-          <h1>So far...</h1>
+          <h1>Explorations</h1>
 
           <h3>Zero-Shot Object Detection</h3>
           <p>Hand overlapping with input prompts to look for "a photo of a pen".</p>

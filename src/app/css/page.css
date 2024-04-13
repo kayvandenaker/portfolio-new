@@ -8,11 +8,7 @@
     
 }
 
-@media only screen and (min-width: 1600px) {
-    .page{
-        max-width: 860px;
-    }
-}
+
 
 .close{
     position: fixed;
@@ -42,12 +38,7 @@
     display: flex; */
 }
 
-@media only screen and (max-width: 712px) {
-    .close{
-        padding: 1rem;
-        position: absolute;
-    }
-}
+
 
 .page-hero{
     margin-bottom: 3rem;
@@ -61,10 +52,14 @@ iframe, img {
 }
 
 iframe {
-    height: 414px;
+    height: 382px;
 }
 
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 712px) {
+    .close{
+        padding: 1rem;
+        position: absolute;
+    }
     iframe {
         height: calc( (100vw - 2rem) * 9  / 16 );
     }
@@ -86,6 +81,22 @@ iframe {
     }
     .nav-footer .desktop{
         display: none;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .page{
+        max-width: 860px;
+    }
+    iframe {
+        height: 463.5px;
+    }
+    .close{
+        padding: 2.5rem;
+    }
+    .nav-footer{
+        bottom: 2.5rem;
+        right: 2.5rem;
     }
 }
 
