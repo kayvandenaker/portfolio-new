@@ -82,6 +82,17 @@ export default function Page() {
           <video src="./media/thesis/box.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
           <div className='image-details'>Hapticlabs, OpenAI's LLM and Adafruit Feather (Python).</div>
 
+          <h3>Physical context as prompt</h3>
+          <p>
+            The doctor examines the patient's knee, the AI comprehends this intricate context and generates insights on demand based on all available data – for example medical records, history and scans. 
+            <br/><br/> 
+            The doctor can express its need for assistance by looking at the screen, indicating he wants the AI to share its insights through that actuator. Subtle facial expressions can be used to get new suggestions, or enlarge them.
+          </p>
+          <video src="./media/thesis/medical.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
+          <div className='image-details'>MediaPipe Face Landmarker (Node.js).</div>
+
+
+
           <p>More coming soon...</p>
           
           <Nav />
