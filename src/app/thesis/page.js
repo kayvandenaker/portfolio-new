@@ -43,7 +43,7 @@ export default function Page() {
           <h3>Zero-Shot Object Detection</h3>
           <p>Hand overlapping with input prompts to look for "a photo of a pen".</p>
           <img src="./media/thesis/pen2.png"/>
-          <div className='image-details'>MediaPipe and OwlViT.</div>
+          <div className='image-details'>MediaPipe and OwlViT (Python).</div>
 
 
           <h3>Accelerometer Analysis</h3>

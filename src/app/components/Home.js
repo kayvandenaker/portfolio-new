@@ -34,7 +34,8 @@ export default function Home() {
           various hard<span className="mobileText"> &</span>
           <span className="desktopText">- and</span> software.
           <br /><br />
-          Currently doing master thesis <span className='mobileText'>w/</span><span className='desktopText'>with</span> <a href='https://www.archetypeai.io/' target="_blank">Archetype AI</a> in <a href='https://www.umu.se/en/umea-institute-of-design/' target="_blank">Umeå</a>, formerly at <a href='https://www.hapticlabs.io' target="_blank">Hapticlabs</a>, <a href='https://www.protopie.io' target="_blank">ProtoPie</a>, <a href='https://www.rolls-roycemotorcars.com/' target="_blank">Rolls-Royce</a>, <a href='https://www.above.se' target="_blank">Above</a>, <a href='https://www.arduino.cc' target="_blank">Arduino</a> and <a href='https://www.bmw.com' target="_blank">BMW</a>.
+          Currently doing master thesis <span className='mobileText'>w/</span><span className='desktopText'>with</span> <a href='https://www.archetypeai.io/' target="_blank">Archetype AI</a> in <a href='https://www.umu.se/en/umea-institute-of-design/' target="_blank">Umeå</a><span className="mobileText">. Before</span>
+          <span className="desktopText">, formerly</span> at <a href='https://www.hapticlabs.io' target="_blank">Hapticlabs</a>, <a href='https://www.protopie.io' target="_blank">ProtoPie</a>, <a href='https://www.rolls-roycemotorcars.com/' target="_blank">Rolls-Royce</a>, <a href='https://www.above.se' target="_blank">Above</a>, <a href='https://www.arduino.cc' target="_blank">Arduino</a> and <a href='https://www.bmw.com' target="_blank">BMW</a>.
           <br /><br />
           <span className="contact-container">
             <a className="link" href="mailto:kayvandenaker@gmail.com" target="_blank">Email</a>

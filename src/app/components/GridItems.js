@@ -6,7 +6,7 @@
 export default {
   gridItems: [
     {
-      title: "Intentional Spaces (WIP)",
+      title: "Intentional Spaces",
       partner: "Archetype AI",
       info: "Thesis with Archetype AI",
       date: "Ongoing",
