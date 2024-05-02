@@ -151,25 +151,13 @@
     text-decoration: underline;
     margin-right: 1ch;
     display: inline-block;
+    cursor: pointer;
 }
-
-/* @media only screen and (min-width: 1300px) and (min-height: 780px){
-    .contact-container{
-        position: fixed;
-        bottom: 1.5rem;
-        left: 0;
-        right: 0;
-        width: 100%;
-        text-align: center;
-        color: var(--grey);
-    }
-    .link{
-        text-decoration: none;
-    }
-    .intro{
-        margin-bottom: 2rem;
-    }
+/* #email-tooltip{
+    display: none;
+    color: var(--grey);
 } */
+
 
 
 @media only screen and (max-width: 760px) {
@@ -205,9 +193,6 @@
 
 
 @media (hover: hover) {
-    /* .grid *{
-        transition: color 0.2s ease;
-    } */
     .intro a:hover{
         text-decoration: underline;
     }
@@ -217,12 +202,13 @@
     .grid-item:hover .grid-media-container{
         display: block;
     }
-    /* .grid:hover span:not(.grid-highlight){
-        color: #ccc;
+    /* span.link:hover ~ a{
+        display: none;
     }
-    .grid-item:hover > .grid-row > span{
-        color: var(--text);
+    span.link:hover ~ #email-tooltip{
+        display: inline;
     } */
+
 
 }
 

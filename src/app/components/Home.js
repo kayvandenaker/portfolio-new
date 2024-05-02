@@ -38,6 +38,8 @@ export default function Home() {
           <span className="desktopText">, formerly</span> at <a href='https://www.hapticlabs.io' target="_blank">Hapticlabs</a>, <a href='https://www.protopie.io' target="_blank">ProtoPie</a>, <a href='https://www.rolls-roycemotorcars.com/' target="_blank">Rolls-Royce</a>, <a href='https://www.above.se' target="_blank">Above</a>, <a href='https://www.arduino.cc' target="_blank">Arduino</a> and <a href='https://www.bmw.com' target="_blank">BMW</a>.
           <br /><br />
           <span className="contact-container">
+            {/* <span className="link" onMouseLeave={() => {document.getElementById("email-tooltip").innerHTML = "copy to clipboard"}} onClick={() => {navigator.clipboard.writeText("kayvandenaker@gmail.com");document.getElementById("email-tooltip").innerHTML = "copied!"}}>Email</span>
+            <span id="email-tooltip">copy kayvandenaker@gmail.com</span> */}
             <a className="link" href="mailto:kayvandenaker@gmail.com" target="_blank">Email</a>
             <a className="link" href="https://www.linkedin.com/in/kayvandenaker" target="_blank">LinkedIn</a>
             <a className="link" href="https://www.instagram.com/aker.industries/" target="_blank">Instagram</a>

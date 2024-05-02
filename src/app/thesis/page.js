@@ -10,7 +10,7 @@ export default function Page() {
       <div className="page">
         <Close />
         {/* <img src="./media/archetype_banner_big.png" className='page-hero'/> */}
-        <h1>Thesis – Physical AI as an interaction design material.</h1>
+        <h1>Intentional Spaces – Physical AI as an interaction design material.</h1>
         <h3>Work In Progress</h3>
         <p>This page is a living document of the master thesis I am currently working on – digging into what physical AI as a material means for the world of interaction design. It aims to explore the possibilities and opportunities that arise when a space understands, reasons, and interacts with the people and things inside of it. How our experiences with our environment change, and our relationship with technology transforms through physical AI. 
 
@@ -90,10 +90,6 @@ export default function Page() {
           </p>
           <video src="./media/thesis/medical.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
           <div className='image-details'>MediaPipe Face Landmarker (Node.js).</div>
-
-
-
-          <p>More coming soon...</p>
           
           <Nav />
 
