@@ -62,7 +62,7 @@ export default function Page() {
 
           <h3>Stethoscope</h3>
           <p>Understand the patient together with AI. Stay in the moment with the other person, while listening to the heart beat and getting insights from the AI.</p>
-          <blockquote>Empowerig humans to stay at the centre, instead of replacing them.</blockquote>
+          <blockquote>Empowering humans to stay at the centre, instead of replacing them.</blockquote>
           <video src="./media/thesis/stethoscope.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
           <div className='image-details'>A01 Summarize API, OpenAI's LLM/TTS, OpenCV, Librosa and Arduino (Python).</div>
 
