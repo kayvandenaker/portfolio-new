@@ -52,7 +52,7 @@
     display: none;
     width: 100%;
     
-    /* background-color: white; */
+    background-color: white;
     overflow-x:scroll;
     white-space: nowrap;
     font-size: 0;
@@ -79,7 +79,8 @@
     width : auto;
     border-radius: 2px;
     background-color: #eee;
-    border-right: 1rem solid white;
+    /* border-right: 1rem solid white; */
+    margin-right: 1rem;
     display: inline-block;
     vertical-align:top;
 
@@ -96,7 +97,8 @@
   }
 
 .grid-media-container > *:last-child{
-    border-right: 1.5rem solid white;
+    margin-right: 1.5rem;
+    /* border-right: 1.5rem solid white; */
     
 }
 
