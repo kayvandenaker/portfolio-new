@@ -11,8 +11,8 @@ export default function Page() {
         <Close />
         {/* <img src="./media/archetype_banner_big.png" className='page-hero'/> */}
         <h1>Intentional Spaces – Physical AI as an interaction design material.</h1>
-        <h3>Work In Progress</h3>
-        <p>This page is a living document of the master thesis I am currently working on – digging into what physical AI as a material means for the world of interaction design. It aims to explore the possibilities and opportunities that arise when a space understands, reasons, and interacts with the people and things inside of it. How our experiences with our environment change, and our relationship with technology transforms through physical AI. 
+        <h3>In short</h3>
+        <p>This page is a recap of the master thesis I did at Umeå Institute of Design – digging into what physical AI as a material means for the world of interaction design. It aims to explore the possibilities and opportunities that arise when a space understands, reasons, and interacts with the people and things inside of it. How our experiences with our environment change, and our relationship with technology transforms through physical AI. 
 
           {/* <br/><br/>
           If you're interested or want to chat about it, feel free to shoot an <u><a href="mailto:kayvandenaker@gmail.com" target="_blank">email</a></u>. */}
@@ -20,7 +20,7 @@ export default function Page() {
           <blockquote>As AI understands more of the physical world, it enables us to make sense of our surroundings in new and easier ways.</blockquote>
           <p>
           <h3>Partner</h3>
-          For this project I am collaborating with Archetype AI, a San-Francisco based startup born out of Google's ATAP department (project Soli). Archetype AI leads the way in developing a Large Behavior Model, which makes sense of the physical world around us by fusing sensor data with natural language. Check the video bellow for more info!
+          Intentional Spaces is a collaboration with Archetype AI, a San-Francisco based startup born out of Google's ATAP department (project Soli). Archetype AI leads the way in developing a Large Behavior Model, which makes sense of the physical world around us by fusing sensor data with natural language. Check the video bellow for more info!
 
 
         </p>
@@ -100,12 +100,22 @@ export default function Page() {
           <video src="./media/thesis/medical.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
           <div className='image-details'>MediaPipe Face Landmarker (Node.js).</div>
 
-          <h3>Thoughts</h3>
+          <h3>Recap</h3>
           <p>
-            All things have character, even if they don't.
-            <br/>
-            Don't underestimate human complexity, emotions, moods, cultures and ethics. 
+          The series of interventions present a glimpse into the landscape of interactions enabled by physical AI. What it could be like to co-exist with an autonomous, social, reactive and pro-active entity that interacts with us in the physical world.
           </p>
+          <video src="./media/thesis/reflection.mp4" type="video/mp4" autoPlay={false} controls muted loop playsInline>Your browser does not support the video tag.</video>
+          <div className='image-details'>What if AI understands the world around us?</div>
+            {/* <blockquote> */}
+
+              <p>
+
+            Consider that all things have character, even if they don't. And don't underestimate human complexity, emotions, moods, cultures and ethics when working with AI.
+            <br/>
+            
+              </p>
+
+            {/* </blockquote> */}
           <Nav />
 
 
