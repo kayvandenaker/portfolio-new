@@ -12,7 +12,7 @@ export default function Page() {
         {/* <img src="./media/archetype_banner_big.png" className='page-hero'/> */}
         <h1>Intentional Spaces – Physical AI as an interaction design material.</h1>
         <h3>In short</h3>
-        <p>This page is a recap of the master thesis I did at Umeå Institute of Design – digging into what physical AI as a material means for the world of interaction design. It aims to explore the possibilities and opportunities that arise when a space understands, reasons, and interacts with the people and things inside of it. How our experiences with our environment change, and our relationship with technology transforms through physical AI. 
+        <p>Intentional Spaces digs into what physical AI as a material means for the world of interaction design. It aims to explore the possibilities and opportunities that arise when a space understands, reasons, and interacts with the people and things inside of it. How our experiences with our environment change, and our relationship with technology transforms through physical AI. 
 
           {/* <br/><br/>
           If you're interested or want to chat about it, feel free to shoot an <u><a href="mailto:kayvandenaker@gmail.com" target="_blank">email</a></u>. */}
