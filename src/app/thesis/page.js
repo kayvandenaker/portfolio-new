@@ -104,7 +104,7 @@ export default function Page() {
           <p>
           The series of interventions present a glimpse into the landscape of interactions enabled by physical AI. What it could be like to co-exist with an autonomous, social, reactive and pro-active entity that interacts with us in the physical world.
           </p>
-          <video src="./media/thesis/reflection.mp4" type="video/mp4" autoPlay={false} controls muted loop playsInline>Your browser does not support the video tag.</video>
+          <video src="./media/thesis/reflection1.mp4" type="video/mp4" autoPlay={false} controls muted loop playsInline>Your browser does not support the video tag.</video>
           <div className='image-details'>What if AI understands the world around us?</div>
             {/* <blockquote> */}
 
