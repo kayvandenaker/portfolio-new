@@ -110,7 +110,7 @@ export default function Page() {
 
               <p>
 
-            Consider that all things have character, even if they don't. And don't underestimate human complexity, emotions, moods, cultures and ethics when working with AI.
+            Consider that all things have character, even if they don't. Don't underestimate human complexity, emotions, moods, cultures and ethics when working with AI.
             <br/>
             
               </p>
