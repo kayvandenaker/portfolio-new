@@ -9,7 +9,7 @@ export default {
       title: "Intentional Spaces",
       partner: "Archetype AI",
       info: "Thesis with Archetype AI",
-      date: "Ongoing",
+      date: "2024",
       media: ["./media/thumbnails/thesis_sketch_thumbnail.mp4","./media/thumbnails/thesis_binoculars_thumbnail.mp4", "./media/thumbnails/thesis_stethoscope_thumbnail.mp4", "./media/thumbnails/thesis_imu_thumbnail.mp4", "./media/thumbnails/thesis_haptics_thumbnail.mp4"],
       link: "thesis",
       poster: "./media/archetype_banner_big.png"
@@ -18,7 +18,7 @@ export default {
       title: "Tech Explorations",
       // partner: "-",
       info: "Side Projects",
-      date: "Ongoing",
+      date: "2021 – 24",
       media: ["./media/gpt_heart_square.jpg", "./media/thumbnails/timer_thumbnail.mp4", "./media/head.png", "./media/thumbnails/lines_thumbnail.mp4", "./media/thumbnails/colors_thumbnail.mp4", "./media/thumbnails/cupra_thumbnail.mp4", "./media/thumbnails/kinect_thumbnail.mp4", "./media/midi.jpg"],
       link: "side-projects",
       poster: "./media/gpt_heart_square.jpg"
@@ -46,19 +46,11 @@ export default {
       title: "Tech Explorations",
       partner: "Above",
       info: "Internship at Above",
-      date: "2022 – 2023",
+      date: "2022 – 23",
       media: ["./media/thumbnails/uwb_thumbnail.mp4", "./media/thumbnails/touchbar_thumbnail.mp4", "./media/thumbnails/bodystorming_thumbnail.mp4", "./media/thumbnails/trackpad_thumbnail.mp4"],
       link: "above",
       poster: "./media/above_poster.png"
     },
-    // {
-    //   title: "Cupra Ferro",
-    //   partner: "Cupra",
-    //   info: "Sensorial interior experience",
-    //   date: "2023",
-    //   media: ["./media/cupra_driving_bw.mp4", "./media/cupra_autonomous_bw.mp4", "./media/cupra_ferro_1.mp4"],
-    //   link: "cupra",
-    // },
     {
       // title: "Tiles – Connecting with your music collection",
       title: "Tiles",
@@ -79,26 +71,8 @@ export default {
       link: "arch",
       poster: "./media/arch_poster.jpg"
     },
-    // {
-    //   title: "Design and Prototyping (NDA)",
-    //   partner: "Arduino",
-    //   info: "Junior Content Creator",
-    //   date: "2022",
-    //   src: "./media/bmw_small.mp4",
-    //   poster: "./media/bmw_poster.jpg",
-    //   link: "bmw",
-    // },
-    // {
-    //   title: "Bespoke Digital Interior Concept (NDA)",
-    //   partner: "Rolls-Royce Motor Cars",
-    //   info: "Freelance",
-    //   date: "2022",
-    //   src: "./media/bmw_small.mp4",
-    //   poster: "./media/bmw_poster.jpg",
-    //   link: "bmw",
-    // },
     {
-      title: "BMW Vision i Circular",
+      title: "Vision i Circular",
       partner: "BMW Group",
       info: "Internship at BMW",
       date: "2021",

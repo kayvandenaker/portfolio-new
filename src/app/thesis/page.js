@@ -10,7 +10,7 @@ export default function Page() {
       <div className="page">
         <Close />
         {/* <img src="./media/archetype_banner_big.png" className='page-hero'/> */}
-        <h1>Intentional Spaces – Physical AI as an interaction design material.</h1>
+        <h1>Intentional Spaces — Physical AI as an interaction design material.</h1>
         <h3>In short</h3>
         <p>Intentional Spaces digs into what physical AI as a material means for the world of interaction design. It aims to explore the possibilities and opportunities that arise when a space understands, reasons, and interacts with the people and things inside of it. How our experiences with our environment change, and our relationship with technology transforms through physical AI. 
 
@@ -18,8 +18,8 @@ export default function Page() {
           If you're interested or want to chat about it, feel free to shoot an <u><a href="mailto:kayvandenaker@gmail.com" target="_blank">email</a></u>. */}
           </p>
           <blockquote>As AI understands more of the physical world, it enables us to make sense of our surroundings in new and easier ways.</blockquote>
-          <p>
           <h3>Partner</h3>
+          <p>
           Intentional Spaces is a collaboration with Archetype AI, a San-Francisco based startup born out of Google's ATAP department (project Soli). Archetype AI leads the way in developing a Large Behavior Model, which makes sense of the physical world around us by fusing sensor data with natural language. Check the video bellow for more info!
 
 

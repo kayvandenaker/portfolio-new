@@ -96,8 +96,10 @@ h1{
   font-size: 34px;
   font-weight: 600;
   margin: 0 0 1rem 0;
-  font-family: "Space Grotesk", system-ui;
-  line-height: 1.1;
+  /* font-family: "Space Grotesk", "Inter", system-ui; */
+  font-family: "Inter", system-ui;
+  letter-spacing: -0.05rem;
+  /* line-height: 1.1; */
 }
 
 h2{

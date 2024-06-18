@@ -18,6 +18,7 @@
 .intro b{
     font-size: 1.1rem;
     font-weight: 600;
+    color: var(--headers);
 }
 
 .grid-item{
@@ -41,6 +42,7 @@
 .grid-row.header{
     font-weight: 600;
     border-bottom: 1px solid #eee;
+    color: var(--headers);
     /* margin-top: 4rem; */
 }
 
