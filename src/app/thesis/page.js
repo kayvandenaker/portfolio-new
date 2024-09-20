@@ -112,7 +112,8 @@ export default function Page() {
 
             Consider that all things have character, even if they don't. Don't underestimate human complexity, emotions, moods, cultures and ethics when working with AI.
             <br/>
-            
+            <br/>
+            Still not tired of reading? Check out the <a className="link" href="https://umu.diva-portal.org/smash/record.jsf?pid=diva2%3A1867426&dswid=-1567" target="_blank">full report</a>
               </p>
 
             {/* </blockquote> */}
