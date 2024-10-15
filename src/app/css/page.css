@@ -209,3 +209,7 @@ video:not(.grid-media-container video){
  
 
 }
+
+.spotify{
+    height: 152px;
+}
