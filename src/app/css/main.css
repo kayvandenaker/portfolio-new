@@ -8,7 +8,8 @@
 
   /* light */
   --bg: white;
-  --text: #333333;
+  /* --text: #333333; */
+  --text: #1d1d1f;
   --headers: black;
   --grey: #AAAAAA;
   --darkgrey: #7f7f7f;
@@ -39,6 +40,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  text-underline-offset: 2px;
 }
 
 
@@ -68,10 +70,15 @@ a {
   text-decoration: none;
 }
 
+u {
+  text-decoration-thickness: 1px;
+}
+
 
 
 *{
-  font-family: "Inter", system-ui;
+  /* font-family: "Inter", system-ui; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Inter', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -97,7 +104,7 @@ h1{
   font-weight: 600;
   margin: 0 0 1rem 0;
   /* font-family: "Space Grotesk", "Inter", system-ui; */
-  font-family: "Inter", system-ui;
+  /* font-family: "Inter", system-ui; */
   letter-spacing: -0.05rem;
   /* line-height: 1.1; */
 }
@@ -137,7 +144,8 @@ blockquote {
   margin: -1rem 0 2rem 0;
   padding: 0.25rem 1.5rem;
   /* border-left: 2px solid #505050; */
-  border-left: 2px solid #999;
+  /* border-left: 2px solid #999; */
+  border-left: 1px solid var(--linecolor);
   font-style: italic;
 }
 

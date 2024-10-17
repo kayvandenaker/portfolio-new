@@ -21,6 +21,7 @@
 
 .close:hover, .nav-footer a:hover{
     text-decoration: underline;
+    text-decoration-thickness: 1px;
 }
 
 .nav-footer{
@@ -86,10 +87,11 @@ iframe {
 
 @media only screen and (min-width: 1600px) {
     .page{
-        max-width: 860px;
+        max-width: 760px;
+        padding: 8rem 1rem 9rem 1rem;
     }
     iframe {
-        height: 463.5px;
+        height: 427.5px;
     }
     .close{
         padding: 2.5rem;
