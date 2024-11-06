@@ -8,7 +8,7 @@ export default {
     {
       title: "Intentional Spaces",
       partner: "Archetype AI",
-      info: "Thesis with Archetype AI",
+      info: "Archetype AI",
       date: "2024",
       media: ["./media/thumbnails/thesis_sketch_thumbnail.mp4","./media/thumbnails/thesis_binoculars_thumbnail.mp4", "./media/thumbnails/thesis_stethoscope_thumbnail.mp4", "./media/thumbnails/thesis_imu_thumbnail.mp4", "./media/thumbnails/thesis_haptics_thumbnail.mp4"],
       link: "thesis",
@@ -45,7 +45,7 @@ export default {
     {
       title: "Tech Explorations",
       partner: "Above",
-      info: "Internship at Above",
+      info: "Above Agency",
       date: "2022 – 23",
       media: ["./media/thumbnails/uwb_thumbnail.mp4", "./media/thumbnails/touchbar_thumbnail.mp4", "./media/thumbnails/bodystorming_thumbnail.mp4", "./media/thumbnails/trackpad_thumbnail.mp4"],
       link: "above",
@@ -74,7 +74,7 @@ export default {
     {
       title: "Vision i Circular",
       partner: "BMW Group",
-      info: "Internship at BMW",
+      info: "BMW Group",
       date: "2021",
       media: ["./media/thumbnails/bmw_thumbnail.mp4", "./media/bmw/crystal.jpg", "./media/bmw/lamp.jpg", "./media/bmw/crystal_2.jpg"],
       link: "bmw",
