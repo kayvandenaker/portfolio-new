@@ -14,7 +14,7 @@ export default function Page() {
           <p></p>
           <h3>Summary</h3>
           <p>My main role within BMW Group was to explore, iterate and validate design proposals early in the process of the concept car department. 
-            I often found myself with designers, artists, composers and engineers thinkering to make their ideas experience-able. 
+            I often found myself with designers, artists, composers and engineers tinkering to make our ideas experience-able. 
             I worked with various hard- and software tools such as Arduino, Kinect, Unity, MadMapper, Leap Motion, TouchDesigner and ProtoPie. 
             
           <br/><br/>
@@ -59,7 +59,7 @@ export default function Page() {
           <img src="./media/bmw/artbar.jpg"/>
 
           <h3>Free-form Hover Displays</h3>
-          <p>Unfortunately, this project is still ongoing so I cannot share much, but throughout my internship I researched various technologies for free-from hover touch displays with the goal to easily and quickly explore display shapes and interactions in interior mockups.</p>
+          <p>Unfortunately, this project is still ongoing so I cannot share much, but throughout my internship I researched various technologies for free-form hover touch displays with the goal to easily and quickly explore display shapes and interactions in interior mockups.</p>
           <img src="./media/bmw/hover.jpg"/>
           <span className='details'>image source: www.cnet.com/tech/mobile/touchless-touch-screen-gives-you-control-without-contact-video/</span>
 
