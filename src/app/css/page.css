@@ -114,6 +114,7 @@ iframe {
     /* border-top: 1px solid #333; */
     font-size: 16px;
     color: var(--darkgrey);
+    line-height: 140%;
 }
 
 .profile{

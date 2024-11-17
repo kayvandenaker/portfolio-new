@@ -157,7 +157,7 @@ iframe + .squares-box .squares{
 margin-top: 0;
 }
 
-iframe + h3, video + h3, img + h3, .squares-box + h3, iframe + h2, video + h2, img + h2, .squares-box + h2, div + h2, iframe + h1, video + h1, img + h1, .squares-box + h1, div + h1{
+iframe + h3, video + h3, img + h3, .squares-box + h3, .image-details + h3, iframe + h2, video + h2, img + h2, .squares-box + h2, div + h2, iframe + h1, video + h1, img + h1, .squares-box + h1, div + h1{
 margin-top: 5rem;
 }
 
