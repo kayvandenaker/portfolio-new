@@ -36,7 +36,7 @@ export default function Home() {
           <br /><br />
           {/* Currently doing master thesis <span className='mobileText'>w/</span><span className='desktopText'>with</span> <a href='https://www.archetypeai.io/' target="_blank">Archetype AI</a> in <a href='https://www.umu.se/en/umea-institute-of-design/' target="_blank">Umeå</a><span className="mobileText">. Before</span>
           <span className="desktopText">, formerly</span> at <a href='https://www.hapticlabs.io' target="_blank">Hapticlabs</a>, <a href='https://www.protopie.io' target="_blank">ProtoPie</a>, <a href='https://www.rolls-roycemotorcars.com/' target="_blank">Rolls-Royce</a>, <a href='https://www.above.se' target="_blank">Above</a>, <a href='https://www.arduino.cc' target="_blank">Arduino</a> and <a href='https://www.bmw.com' target="_blank">BMW</a>. */}
-          Currently contracting for <a href='https://ai.google/' target="_blank">Google</a> and <a href='https://modemworks.com/' target="_blank">Modem</a>.
+          Currently contracting at the <a href='https://ai.google/' target="_blank">Google Envisioning Studio</a>. Previous public work is listed bellow, projects for <a href='https://modemworks.com/' target="_blank">Modem Works</a>, <a href='https://x.company/' target="_blank">Google X</a>, <a href='https://www.rolls-roycemotorcars.com/' target="_blank">Rolls-Royce</a> and others remain confidential. 
           <br /><br />
           <span className="contact-container">
             {/* <span className="link" onMouseLeave={() => {document.getElementById("email-tooltip").innerHTML = "copy to clipboard"}} onClick={() => {navigator.clipboard.writeText("kayvandenaker@gmail.com");document.getElementById("email-tooltip").innerHTML = "copied!"}}>Email</span>
