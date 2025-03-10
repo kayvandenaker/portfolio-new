@@ -201,7 +201,7 @@ video:not(.grid-media-container video){
         grid-template-columns: 1fr;
     }
     .quarter{
-        grid-template-columns: 1fr;
+        grid-template-columns: 3fr 2fr;
     }
     h1{
         font-size: 2rem;
