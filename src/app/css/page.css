@@ -201,10 +201,10 @@ video:not(.grid-media-container video){
         grid-template-columns: 1fr;
     }
     .quarter{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     h1{
-        font-size: 28px;
+        font-size: 2rem;
     }
     .page-hero + h1{
         margin-top: 0;
