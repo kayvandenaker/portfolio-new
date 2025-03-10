@@ -82,11 +82,16 @@ h1{
   font-size: 2.5rem;
   font-weight: 600;
   margin: 0 0 1rem 0;
-  /* font-family: "Space Grotesk", "Inter", system-ui; */
   /* font-family: "Inter", system-ui; */
   /* letter-spacing: -0.05rem; */
   /* line-height: 1.1; */
   /* font-family: "Alte Haas Grotesk", system-ui, -apple-system, BlinkMacSystemFont, 'Inter', Roboto, sans-serif; */
+}
+
+@media only screen and (max-width: 600px) {
+  h1{
+      font-size: 2rem;
+  }
 }
 
 h2{
