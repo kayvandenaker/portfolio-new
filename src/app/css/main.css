@@ -80,7 +80,7 @@ img, video{
 
 h1{
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: -0.8px;
   margin: 0 0 1rem 0;
   /* font-family: "Inter", system-ui; */
@@ -100,7 +100,7 @@ h2{
   margin: 4rem 0 20px 0;
   display: block;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h3{
