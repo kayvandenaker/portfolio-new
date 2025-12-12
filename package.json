@@ -9,14 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-three/fiber": "^8.13.7",
-    "@react-three/postprocessing": "^2.15.1",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.4.2",
+    "@react-three/postprocessing": "^3.0.4",
     "@vercel/analytics": "^1.2.2",
     "next": "^16.0.8",
     "prop-types": "^15.8.1",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
     "react-responsive": "^9.0.2",
-    "react-responsive-masonry": "^2.1.7"
+    "react-responsive-masonry": "^2.1.7",
+    "three": "^0.182.0"
   }
 }
