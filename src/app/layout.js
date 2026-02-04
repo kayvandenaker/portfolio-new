@@ -1,13 +1,22 @@
 import './globals.css'
-import { Inter, Space_Grotesk } from 'next/font/google'
-// import { Analytics } from "@vercel/analytics/react"
+import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
-const space_grotesk = Space_Grotesk({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '700'],
+  variable: '--font-inter',
+});
 
 export const metadata = {
   title: 'Kay van den Aker',
   description: 'Designer and prototyper, exploring interactions that fuse digital and physical. Turning ambiguous ideas into experiences by gluing together various hard- and software.'
+}
+
+export const viewport = {
+  themeColor: '#000000',
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({ children }) {
@@ -15,7 +24,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {children}
-        {/* <Analytics /> */}
       </body>
     </html>
   )

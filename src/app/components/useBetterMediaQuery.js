@@ -1,7 +1,7 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 export default function useBetterMediaQuery(mediaQueryString) {
-  const [matches, setMatches] = useState(null);
+  const [matches, setMatches] = useState(false);
 
   useEffect(() => {
     const mediaQueryList = window.matchMedia(mediaQueryString);

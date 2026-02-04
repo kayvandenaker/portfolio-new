@@ -1,9 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'); */
 @import url('https://rsms.me/inter/inter.css');
 
-
-:root{
+:root {
   --bg: white;
   --text: #1d1d1f;
   --headers: black;
@@ -17,13 +14,14 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  text-underline-offset: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--grey) !important;
 }
 
 
 
 
-html{
+html {
   background-color: var(--bg);
 }
 
@@ -36,6 +34,7 @@ body {
 }
 
 @media only screen and (min-width: 1600px) {
+
   html,
   body {
     font-size: 18px;
@@ -54,48 +53,45 @@ u {
 
 
 
-*{
+* {
   /* font-family: "Inter", system-ui; */
-  font-family: 'Helvetica Neue', system-ui, -apple-system, BlinkMacSystemFont, 'Inter', Roboto, sans-serif;
+  font-family: 'Helvetica Neue', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  
+
   -webkit-font-feature-settings: "ss01", "calt";
-  -moz-font-feature-settings: "ss01","calt";
-    -o-font-feature-settings: "ss01","calt";
-       font-feature-settings: "ss01","calt";
+  -moz-font-feature-settings: "ss01", "calt";
+  -o-font-feature-settings: "ss01", "calt";
+  font-feature-settings: "ss01", "calt";
 }
 
 
-.grey{
+.grey {
   opacity: 0.4;
 }
 
-img, video{
-  /* border-radius: 2px; */
+img,
+video {
   width: 100%;
   display: block;
+  height: auto;
 }
 
-h1{
+h1 {
   font-size: 2.5rem;
   font-weight: 500;
   letter-spacing: -0.8px;
   margin: 0 0 1rem 0;
-  /* font-family: "Inter", system-ui; */
-  /* letter-spacing: -0.05rem; */
-  /* line-height: 1.1; */
-  /* font-family: "Alte Haas Grotesk", system-ui, -apple-system, BlinkMacSystemFont, 'Inter', Roboto, sans-serif; */
 }
 
 @media only screen and (max-width: 600px) {
-  h1{
-      font-size: 2rem;
+  h1 {
+    font-size: 2rem;
   }
 }
 
-h2{
+h2 {
   text-transform: uppercase;
   margin: 4rem 0 20px 0;
   display: block;
@@ -103,23 +99,27 @@ h2{
   font-weight: 500;
 }
 
-h3{
+h3 {
   margin: 3rem 0 0.75rem;
   font-size: 1.2rem;
   font-weight: 500;
 }
 
-h4{
-margin: 0 0 0.5rem;
-font-size: 1rem;
-padding: 0;
-font-weight: 500;
+h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  padding: 0;
+  font-weight: 500;
 }
 
-h1, h2, h3, h4{
+h1,
+h2,
+h3,
+h4 {
   color: var(--headers);
   /* color: black; */
 }
+
 p {
   margin-bottom: 2rem;
   line-height: 140%;
@@ -129,24 +129,39 @@ p {
 blockquote {
   margin: -1rem 0 2rem 0;
   padding: 0.25rem 1.5rem;
-  /* border-left: 2px solid #505050; */
-  /* border-left: 2px solid #999; */
   border-left: 1px solid var(--linecolor);
   font-style: italic;
 }
 
-iframe + .squares-box img{
-margin-bottom: 0;
+iframe+.squares-box img {
+  margin-bottom: 0;
 }
 
-iframe + .squares-box .squares{
-margin-top: 0;
+iframe+.squares-box .squares {
+  margin-top: 0;
 }
 
-iframe + h3, video + h3, img + h3, .squares-box + h3, .image-details + h3, iframe + h2, video + h2, img + h2, .squares-box + h2, div + h2, iframe + h1, video + h1, img + h1, .squares-box + h1, div + h1{
-margin-top: 5rem;
+iframe+h3,
+video+h3,
+img+h3,
+.squares-box+h3,
+.image-details+h3,
+iframe+h2,
+video+h2,
+img+h2,
+.squares-box+h2,
+div+h2,
+iframe+h1,
+video+h1,
+img+h1,
+.squares-box+h1,
+div+h1 {
+  margin-top: 5rem;
 }
 
-iframe + p, video + p, img + p, .squares-box + p{
-margin-top: 2rem;
+iframe+p,
+video+p,
+img+p,
+.squares-box+p {
+  margin-top: 2rem;
 }
