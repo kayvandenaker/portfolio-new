@@ -11,14 +11,15 @@
 }
 
 .intro {
-    max-width: 510px;
+    max-width: 540px;
     margin-bottom: 3rem;
 }
 
 .intro b {
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 600;
     color: var(--headers);
+    line-height: normal;
 }
 
 .grid-item {
@@ -148,7 +149,7 @@
     }
 
     .intro {
-        max-width: 540px;
+        max-width: 570px;
         margin-bottom: 4rem;
     }
 }
