@@ -163,6 +163,7 @@ function GridItem({ item, index, isSmall, elementsRef }) {
 export default function Home() {
   const isSmall = useBetterMediaQuery('(max-width: 760px)');
   const elementsRef = useRef(GridItems.gridItems.map(() => createRef()));
+  const [showProfilePic, setShowProfilePic] = useState(false);
 
   useEffect(() => {
     sessionStorage.setItem("oldPage", "home");
@@ -170,33 +171,42 @@ export default function Home() {
 
   return (
     <div className="container">
-      <div className="intro">
-        <p>
-          <b>Kay van den Aker</b>
-          <br /><br />
-          Designer and prototyper, exploring interactions that fuse digital and
-          physical. Turning ambiguous ideas into experiences by gluing together
-          various hard<span className="mobileText"> &</span>
-          <span className="desktopText">- and</span> software.
-          <br /><br />
-          Currently contracting with <span className="desktopText">the </span>
-          <a href='https://ai.google/' target="_blank" rel="noopener noreferrer">
-            Google<span className="desktopText"> Envisioning Studio</span>
-          </a>. Previous public work is listed below, projects for{' '}
-          <a href='https://modemworks.com/' target="_blank" rel="noopener noreferrer">Modem Works</a>,{' '}
-          <a href='https://x.company/' target="_blank" rel="noopener noreferrer">Google X</a>,{' '}
-          <a href='https://www.arduino.cc' target="_blank" rel="noopener noreferrer">Arduino</a>,{' '}
-          <a href='https://www.rolls-roycemotorcars.com/' target="_blank" rel="noopener noreferrer">Rolls-Royce</a>,
-          and others remain confidential.
-          <br /><br />
-          <span className="contact-container">
-            <a className="link" href="mailto:kayvandenaker@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
-            <a className="link" href="https://www.linkedin.com/in/kayvandenaker" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a className="link" href="https://www.instagram.com/aker.industries/" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a className="link" href="https://twitter.com/kayvandenaker" target="_blank" rel="noopener noreferrer">X</a>
-            <a className="link" href="./files/Kay_van_den_Aker.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-          </span>
-        </p>
+      <div className="intro-wrapper">
+        <div className="intro">
+          <p>
+            <b onMouseEnter={() => setShowProfilePic(true)} onMouseLeave={() => setShowProfilePic(false)}>Kay van den Aker</b>
+            <br /><br />
+            Designer and prototyper, exploring interactions that fuse digital and
+            physical. Turning ambiguous ideas into experiences by gluing together
+            various hard<span className="mobileText"> &</span>
+            <span className="desktopText">- and</span> software.
+            <br /><br />
+            Currently contracting with <span className="desktopText">the </span>
+            <a href='https://ai.google/' target="_blank" rel="noopener noreferrer">
+              Google<span className="desktopText"> Envisioning Studio</span>
+            </a>. Previous public work is listed below, projects for{' '}
+            <a href='https://modemworks.com/' target="_blank" rel="noopener noreferrer">Modem Works</a>,{' '}
+            <a href='https://x.company/' target="_blank" rel="noopener noreferrer">Google X</a>,{' '}
+            <a href='https://www.arduino.cc' target="_blank" rel="noopener noreferrer">Arduino</a>,{' '}
+            <a href='https://www.rolls-roycemotorcars.com/' target="_blank" rel="noopener noreferrer">Rolls-Royce</a>,
+            and others remain confidential.
+            <br /><br />
+            <span className="contact-container">
+              <a className="link" href="mailto:kayvandenaker@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+              <a className="link" href="https://www.linkedin.com/in/kayvandenaker" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a className="link" href="https://www.instagram.com/aker.industries/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a className="link" href="https://twitter.com/kayvandenaker" target="_blank" rel="noopener noreferrer">X</a>
+              <a className="link" href="./files/Kay_van_den_Aker.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            </span>
+          </p>
+        </div>
+        {!isSmall && <Image
+          src="/media/profile.png"
+          width={640}
+          height={640}
+          loading="lazy"
+          style={{ opacity: showProfilePic ? 1 : 0 }}
+        />}
       </div>
 
       {!isSmall && (

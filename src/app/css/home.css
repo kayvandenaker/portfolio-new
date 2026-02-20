@@ -10,6 +10,20 @@
     max-width: 960px;
 }
 
+.intro-wrapper {
+    position: relative;
+}
+
+.intro-wrapper img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+    z-index: -1;
+    border-radius: 2px;
+}
+
 .intro {
     max-width: 530px;
     margin-bottom: 3rem;
@@ -20,6 +34,7 @@
     font-weight: 600;
     color: var(--headers);
     line-height: normal;
+    cursor: vertical-text;
 }
 
 .grid-item {
