@@ -27,7 +27,7 @@ export default {
       title: "Tech explorations",
       // partner: "-",
       info: "Side projects",
-      date: "2021—24",
+      date: "2021 – 24",
       media: ["/media/gpt_heart_square.jpg", "/media/thumbnails/timer_thumbnail.mp4", "/media/head.png", "/media/thumbnails/lines_thumbnail.mp4", "/media/thumbnails/colors_thumbnail.mp4", "/media/thumbnails/cupra_thumbnail.mp4", "/media/thumbnails/kinect_thumbnail.mp4", "/media/midi.jpg"],
       link: "/side-projects",
       poster: "/media/gpt_heart_square.jpg"
@@ -55,7 +55,7 @@ export default {
       title: "Tech explorations",
       partner: "Above",
       info: "Above Agency",
-      date: "2022—23",
+      date: "2022 – 23",
       media: ["/media/thumbnails/uwb_thumbnail.mp4", "/media/thumbnails/touchbar_thumbnail.mp4", "/media/thumbnails/bodystorming_thumbnail.mp4", "/media/thumbnails/trackpad_thumbnail.mp4"],
       link: "/above",
       poster: "/media/above_poster.png"
