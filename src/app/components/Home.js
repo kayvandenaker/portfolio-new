@@ -181,10 +181,8 @@ export default function Home() {
             various hard<span className="mobileText"> &</span>
             <span className="desktopText">- and</span> software.
             <br /><br />
-            Currently contracting with <span className="desktopText">the </span>
-            <a href='https://ai.google/' target="_blank" rel="noopener noreferrer">
-              Google<span className="desktopText"> Envisioning Studio</span>
-            </a>. Previous public work is listed below, projects for{' '}
+            Currently working as Senior Creative Technologist at{' '}
+            <a href='https://ai.google/' target="_blank" rel="noopener noreferrer">Google</a>. Previous public work is listed below, projects for{' '}
             <a href='https://modemworks.com/' target="_blank" rel="noopener noreferrer">Modem Works</a>,{' '}
             <a href='https://x.company/' target="_blank" rel="noopener noreferrer">Google X</a>,{' '}
             <a href='https://www.arduino.cc' target="_blank" rel="noopener noreferrer">Arduino</a>,{' '}
