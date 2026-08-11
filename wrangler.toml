@@ -1,29 +1,7 @@
 name = "portfolio-new"
-main = ".open-next/worker.js"
-compatibility_date = "2024-09-23"
+compatibility_date = "2026-08-11"
 compatibility_flags = ["nodejs_compat"]
 
 [assets]
-directory = ".open-next/assets"
+directory = "out"
 binding = "ASSETS"
-
-# Service binding to itself for cache revalidation
-[[services]]
-binding = "WORKER_SELF_REFERENCE"
-service = "portfolio-new"
-
-[[durable_objects.bindings]]
-name = "CACHE"
-class_name = "DOShardedTagCache"
-
-[[durable_objects.bindings]]
-name = "QUEUE"
-class_name = "DOQueueHandler"
-
-[[durable_objects.bindings]]
-name = "PURGE"
-class_name = "BucketCachePurge"
-
-[[migrations]]
-tag = "v1"
-new_sqlite_classes = ["DOShardedTagCache", "DOQueueHandler", "BucketCachePurge"]

@@ -5,11 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:cf": "opennextjs-cloudflare build",
-    "preview:cf": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy:cf": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "preview": "opennextjs-cloudflare build && wrangler dev",
-    "deploy": "opennextjs-cloudflare build && wrangler deploy",
+    "preview": "wrangler dev",
+    "deploy": "wrangler deploy",
     "start": "next start",
     "lint": "eslint .",
     "analyze": "ANALYZE=true next build"
@@ -30,7 +27,6 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "16.3.0",
-    "@opennextjs/cloudflare": "^1.20.2",
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.3.0",
     "wrangler": "^4.121.0"
