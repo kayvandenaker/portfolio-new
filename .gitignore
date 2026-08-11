@@ -17,6 +17,7 @@
 
 # OpenNext build artifacts
 /.open-next/
+/.wrangler/
 
 # misc
 .DS_Store
