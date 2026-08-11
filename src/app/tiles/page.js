@@ -5,14 +5,18 @@ import '../css/page.css'
 import Close from '../components/Close.js'
 import Image from 'next/image'
 
+// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
+
 export default function Page() {
   return (
     <div className="page">
       <Close />
-      <Image src="/media/tiles/tiles.jpeg" className='page-hero' width={1280} height={720} />
+      <Image alt="" src="/media/tiles/tiles.jpeg" className='page-hero' width={1280} height={720} />
       <h1>Tiles — Connecting with your music collection.</h1>
       <h3>Problem</h3>
-      <p>Modern music listening experiences often lack suspense. The black box present in modern technologies such as mobile phones abstract away what's going on behind the interface and don't require any process to interact with. Any song in the world is just one click away, no sonic feedback, no haptic feedback and flat visual feedback.</p>
+      <p>Modern music listening experiences often lack suspense. The black box present in modern technologies such as mobile phones abstract away what&apos;s going on behind the interface and don&apos;t require any process to interact with. Any song in the world is just one click away, no sonic feedback, no haptic feedback and flat visual feedback.</p>
       <h3>Solution</h3>
       <p>
         Tiles is an exploration of how a tangible interface could present music listening as the sophisticated process it was intended to be.
@@ -51,10 +55,10 @@ export default function Page() {
       <video src="./media/slider.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
 
       <p>Then a rough mockup of the interactions with the device was made in ProtoPie. This allowed to quickly explore, experience and iterate interface ideas.</p>
-      <Image src="/media/tiles/protopie.png" width={1280} height={720} />
+      <Image alt="" src="/media/tiles/protopie.png" width={1280} height={720} />
 
       <p>I created a physical experience prototype to try out the tangible interface in combination with the sounds and the graphical user interface. </p>
-      <Image src="/media/tiles/prototype.jpeg" width={1280} height={720} />
+      <Image alt="" src="/media/tiles/prototype.jpeg" width={1280} height={720} />
 
       <p>A projector was used to show what the screens would display. The electronics communicate with ProtoPie through an Arduino.</p>
       <div className='half'>
@@ -65,9 +69,9 @@ export default function Page() {
 
       <h3>Model Making</h3>
       <p>This project was a collaboration with the Product Design MFA, the mockup bellow is mostly their work. I helped shaping the mechanical parts and did the video editting.</p>
-      <Image src="/media/tiles/process.jpeg" width={1280} height={720} />
-      <Image src="/media/tiles/render2.jpeg" width={1280} height={720} />
-      <Image src="/media/tiles/back.jpg" width={1280} height={720} />
+      <Image alt="" src="/media/tiles/process.jpeg" width={1280} height={720} />
+      <Image alt="" src="/media/tiles/render2.jpeg" width={1280} height={720} />
+      <Image alt="" src="/media/tiles/back.jpg" width={1280} height={720} />
 
     </div>
   )

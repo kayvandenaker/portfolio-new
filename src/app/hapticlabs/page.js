@@ -5,6 +5,10 @@ import '../css/page.css'
 import Close from '../components/Close.js'
 import Image from 'next/image'
 
+// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
+
 export default function Page() {
   return (
     <div className="page">
@@ -16,7 +20,7 @@ export default function Page() {
       <h3>Unity</h3>
       <p>Created an integration and demo for Unity. Trigger haptics on grab, push, bubble pop and stretch. Used at various conferences to explain the Hapticlabs eco-system.</p>
       <video src="./media/hapticlabs_unity.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
-      <Image src="/media/hapticlabs_conference.jpg" width={1280} height={720} />
+      <Image  alt="" src="/media/hapticlabs_conference.jpg" width={1280} height={720} />
 
       <h3>TouchDesigner</h3>
       <p>Coded an integration for TouchDesigner. The demo shows dynamic haptics responding to sound. </p>

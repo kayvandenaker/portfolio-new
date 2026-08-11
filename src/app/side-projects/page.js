@@ -25,31 +25,31 @@ export default function Page() {
         Built with React and Arduino, in collaboration with <a href="https://lukasmoro.com" target="_blank">Lukas Moro</a>.</p>
       {/* </div> */}
       <video src="./media/gpt_smile.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
-      <Image src="/media/gpt_screenshot.png" width={1280} height={720} />
+      <Image  alt="" src="/media/gpt_screenshot.png" width={1280} height={720} />
       <br />
       <div className='half'>
         <div>
-          "Heart"<br /><br />
-          <Image src="/media/gpt_heart_square.jpg" width={720} height={720} />
+          &quot;Heart&quot;<br /><br />
+          <Image  alt="" src="/media/gpt_heart_square.jpg" width={720} height={720} />
         </div>
         <div>
-          "Letter A"<br /><br />
-          <Image src="/media/gpt_letter_a.jpg" width={720} height={720} />
+          &quot;Letter A&quot;<br /><br />
+          <Image  alt="" src="/media/gpt_letter_a.jpg" width={720} height={720} />
         </div>
         <div>
-          "Smiley"<br /><br />
-          <Image src="/media/gpt_smiley.jpg" width={720} height={720} />
+          &quot;Smiley&quot;<br /><br />
+          <Image  alt="" src="/media/gpt_smiley.jpg" width={720} height={720} />
         </div>
         <div>
-          "Space Invader"<br /><br />
-          <Image src="/media/gpt_invader.jpg" width={720} height={720} />
+          &quot;Space Invader&quot;<br /><br />
+          <Image  alt="" src="/media/gpt_invader.jpg" width={720} height={720} />
         </div>
       </div>
 
       <h3>Timer</h3>
       <p>Micro interaction to go from 0:59 to 1:00, made with SwiftUI.</p>
       <video src="./media/timer_swift.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
-      <Image src="/media/timer.png" width={1280} height={720} />
+      <Image  alt="" src="/media/timer.png" width={1280} height={720} />
 
 
       <h3>3D Head</h3>
@@ -61,12 +61,12 @@ export default function Page() {
       <h3>Entering Digital</h3>
       <p>Distortion as the physical enters the digital world. Loads of particles make the lines in Unity VFX, LeapMotion for the hand tracking.</p>
       <video src="./media/lines.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
-      <Image src="/media/lines.jpg" width={1280} height={720} />
+      <Image  alt="" src="/media/lines.jpg" width={1280} height={720} />
 
       <h3>Shader Noise</h3>
       <p>Using shaders to generate colorful animations. Made using various noise textures and gradients in Blender.</p>
       <video src="./media/colors.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
-      <Image src="/media/colors.png" width={1280} height={720} />
+      <Image  alt="" src="/media/colors.png" width={1280} height={720} />
 
 
       <h3>Cupra Ferro</h3>
@@ -105,12 +105,12 @@ export default function Page() {
       <h3>Kinect Kitchen</h3>
       <p>Projection mapping and image processing in TouchDesigner, Kinect for body tracking.</p>
       <video src="./media/kinect.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
-      <Image src="/media/kinect.jpg" width={1280} height={720} />
+      <Image  alt="" src="/media/kinect.jpg" width={1280} height={720} />
 
 
       <h3>MIDI Controller</h3>
       <p>Arduino project from back in 2015, a MIDI Controller for FL Studio. Illuminated arcade buttons, potentionmeters and 5 segment LED filter level indicators.</p>
-      <Image src="/media/midi.jpg" width={1280} height={720} />
+      <Image  alt="" src="/media/midi.jpg" width={1280} height={720} />
     </div>
   )
 }

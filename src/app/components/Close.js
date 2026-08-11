@@ -6,11 +6,14 @@ import { useRouter } from 'next/navigation';
 
 export default function Close() {
     const router = useRouter();
-    const [fromHome, setFromHome] = useState(0);
+    const [fromHome, setFromHome] = useState(false);
 
     useEffect(() => {
-        setFromHome(sessionStorage.getItem('oldPage') == "home");
-        sessionStorage.setItem('oldPage', 'sub');
+        const updateFromHome = () => {
+            setFromHome(sessionStorage.getItem('oldPage') == "home");
+            sessionStorage.setItem('oldPage', 'sub');
+        };
+        requestAnimationFrame(updateFromHome);
     }, [])
 
     return (

@@ -5,50 +5,61 @@ import "../css/home.css";
 
 import Link from 'next/link'
 import Image from "next/image";
-import { React, useEffect, useRef, createRef, useState, useCallback } from "react";
+import { React, useEffect, useRef, useState, useCallback } from "react";
 import GridItems from "../components/GridItems.js";
 
 import useBetterMediaQuery from '../components/useBetterMediaQuery.js';
 
 // Lazy loading component for media
 function LazyMedia({ media, title, index, isSmall }) {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(isSmall);
   const containerRef = useRef(null);
+  const observerRef = useRef(null);
 
-  useEffect(() => {
-    if (isSmall) {
-      setIsVisible(true);
-      return;
-    }
+  const markVisible = useCallback(() => {
+    setIsVisible(true);
+  }, []);
 
-    const observer = new IntersectionObserver(
+  const createObserver = useCallback(() => {
+    return new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setIsVisible(true);
-            observer.unobserve(entry.target);
+            markVisible();
+            if (observerRef.current) {
+              observerRef.current.unobserve(entry.target);
+            }
           }
         });
       },
       { rootMargin: '50px' } // Start loading slightly before visible
     );
+  }, [markVisible]);
 
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
+  useEffect(() => {
+    if (isSmall) {
+      return;
+    }
+
+    observerRef.current = createObserver();
+    const container = containerRef.current;
+    if (container && observerRef.current) {
+      observerRef.current.observe(container);
     }
 
     return () => {
-      if (containerRef.current) {
-        observer.unobserve(containerRef.current);
+      if (container && observerRef.current) {
+        observerRef.current.unobserve(container);
       }
     };
-  }, [isSmall]);
+  }, [isSmall, createObserver]);
 
   const isVideo = typeof media === 'string' && media.endsWith("mp4");
+  const visible = isSmall || isVisible;
 
   return (
     <div ref={containerRef}>
-      {isVisible ? (
+      {visible ? (
         isVideo ? (
           <video
             key={`video-${index}`}
@@ -89,15 +100,17 @@ function GridItem({ item, index, isSmall, elementsRef }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = useCallback(() => {
-    if (!isSmall && elementsRef.current[index]?.current) {
-      elementsRef.current[index].current.scrollLeft = 0;
+    const itemContainer = elementsRef.current[index];
+    if (!isSmall && itemContainer) {
+      itemContainer.scrollLeft = 0;
       setIsHovered(true);
     }
   }, [isSmall, elementsRef, index]);
 
   const handleMouseMove = useCallback((event) => {
-    if (!isSmall && isHovered && elementsRef.current[index]?.current) {
-      elementsRef.current[index].current.scrollLeft += event.movementX * 5;
+    const itemContainer = elementsRef.current[index];
+    if (!isSmall && isHovered && itemContainer) {
+      itemContainer.scrollLeft += event.movementX * 5;
     }
   }, [isSmall, isHovered, elementsRef, index]);
 
@@ -126,7 +139,7 @@ function GridItem({ item, index, isSmall, elementsRef }) {
         )}
 
         {item.media && !isSmall ? (
-          <div className="grid-media-container" ref={elementsRef.current[index]}>
+          <div className="grid-media-container" ref={(el) => { elementsRef.current[index] = el; }}>
             {item.media.map((media, k) => (
               <LazyMedia
                 key={`media-${index}-${k}`}
@@ -145,6 +158,7 @@ function GridItem({ item, index, isSmall, elementsRef }) {
               width={1920}
               height={1080}
               loading="lazy"
+              alt={item.title}
             />
           </div>
         )}
@@ -162,7 +176,7 @@ function GridItem({ item, index, isSmall, elementsRef }) {
 
 export default function Home() {
   const isSmall = useBetterMediaQuery('(max-width: 760px)');
-  const elementsRef = useRef(GridItems.gridItems.map(() => createRef()));
+  const elementsRef = useRef([]);
   const [showProfilePic, setShowProfilePic] = useState(false);
 
   useEffect(() => {
@@ -204,6 +218,7 @@ export default function Home() {
           height={640}
           loading="lazy"
           style={{ opacity: showProfilePic ? 1 : 0 }}
+          alt="Profile picture"
         />}
       </div>
 

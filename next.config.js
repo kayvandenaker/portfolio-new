@@ -9,7 +9,7 @@ const nextConfig = {
         contentDispositionType: 'attachment',
         contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     },
-    swcMinify: true,
+    cacheComponents: true,
     compress: true,
     productionBrowserSourceMaps: false,
     compiler: {

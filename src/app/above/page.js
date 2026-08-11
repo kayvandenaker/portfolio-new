@@ -5,6 +5,10 @@ import '../css/page.css'
 import Close from '../components/Close.js'
 import Image from 'next/image'
 
+// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
+
 export default function Page() {
   return (
     <div className="page">
@@ -20,7 +24,7 @@ export default function Page() {
       <h3>IR Touchbar</h3>
       <p>An interaction exploration of an infrared touch sensor in combination with MadMapper and ProtoPie. Using textured fabric to touch and projection map onto.</p>
       <video src="./media/touchbar.mp4" type="video/mp4" autoPlay={true} controls muted loop playsInline>Your browser does not support the video tag.</video>
-      <Image src='/media/touchbar2.jpeg' width={1280} height={720} />
+      <Image  alt="" src='/media/touchbar2.jpeg' width={1280} height={720} />
 
       <h3>Bodystorming</h3>
       <p>Projection mapping Figma to get a quick feel for interactions, dimensions and layout. MadMapper screencapturing Figma and projected onto various projection surfaces.</p>

@@ -5,11 +5,15 @@ import '../css/page.css'
 import Close from '../components/Close.js'
 import Image from 'next/image'
 
+// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
+
 export default function Page() {
   return (
     <div className="page">
       <Close />
-      <Image src="/media/bmw/bmw.jpg" className='page-hero' width={1280} height={720} />
+      <Image  alt="" src="/media/bmw/bmw.jpg" className='page-hero' width={1280} height={720} />
       <h1>BMW Group — Highlights of my work as creative technologist.</h1>
       <p></p>
       <h3>Summary</h3>
@@ -44,19 +48,19 @@ export default function Page() {
 
       <h3>Steering Wheel</h3>
       <p>The simplistic steering wheel raised many questions regarding interaction possibilities. I created interactive prototypes of the touchpads using Arduino and capacitive touch sensors which were directly integrated into ProtoPie so the design department could quickly try out and iterate on their UI and interaction concepts.</p>
-      <Image src="/media/bmw/mfl.jpg" width={1280} height={720} />
+      <Image  alt="" src="/media/bmw/mfl.jpg" width={1280} height={720} />
 
       <h3>C-Pillar Lamps</h3>
       <p>The C-Pillar lamps are upcycled from old iDrive components. I received a sketch and turned that into an experience prototype using the original rotary encoder and crystal, an Arduino and a 3D printed enclosure. I created a PCB mockup, the swiveling mechanism and the (final) A-surfaces. </p>
-      <Image src="/media/bmw/lamp.jpg" width={1280} height={720} />
+      <Image  alt="" src="/media/bmw/lamp.jpg" width={1280} height={720} />
 
       <h3>Art Bar</h3>
       <p>The Art Bar was something that was never done before, so we had to try how such component could function. I 3D printed the lower part of the Art Bar and made a mockup for the illuminated capacitive touch sensors and color recognition camera.</p>
-      <Image src="/media/bmw/artbar.jpg" width={1280} height={720} />
+      <Image  alt="" src="/media/bmw/artbar.jpg" width={1280} height={720} />
 
       <h3>Free-form Hover Displays</h3>
       <p>Unfortunately, this project is still ongoing so I cannot share much, but throughout my internship I researched various technologies for free-form hover touch displays with the goal to easily and quickly explore display shapes and interactions in interior mockups.</p>
-      <Image src="/media/bmw/hover.jpg" width={1280} height={720} />
+      <Image  alt="" src="/media/bmw/hover.jpg" width={1280} height={720} />
       <span className='details'>image source: www.cnet.com/tech/mobile/touchless-touch-screen-gives-you-control-without-contact-video/</span>
     </div>
   )
