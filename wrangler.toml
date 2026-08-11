@@ -7,6 +7,11 @@ compatibility_flags = ["nodejs_compat"]
 directory = ".open-next/assets"
 binding = "ASSETS"
 
+# Service binding to itself for cache revalidation
+[[services]]
+binding = "WORKER_SELF_REFERENCE"
+service = "portfolio-new"
+
 [[durable_objects.bindings]]
 name = "CACHE"
 class_name = "DOShardedTagCache"
