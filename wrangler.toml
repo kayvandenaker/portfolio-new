@@ -6,3 +6,19 @@ compatibility_flags = ["nodejs_compat"]
 [assets]
 directory = ".open-next/assets"
 binding = "ASSETS"
+
+[[durable_objects.bindings]]
+name = "CACHE"
+class_name = "DOShardedTagCache"
+
+[[durable_objects.bindings]]
+name = "QUEUE"
+class_name = "DOQueueHandler"
+
+[[durable_objects.bindings]]
+name = "PURGE"
+class_name = "BucketCachePurge"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["DOShardedTagCache", "DOQueueHandler", "BucketCachePurge"]
